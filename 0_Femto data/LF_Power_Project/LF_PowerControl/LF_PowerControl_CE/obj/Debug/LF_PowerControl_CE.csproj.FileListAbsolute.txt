@@ -1,0 +1,16 @@
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\bin\Debug\LF_PowerControl_CE.exe
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\bin\Debug\LF_PowerControl_CE.pdb
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.Form_Main.resources
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.Properties.Resources.resources
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.csproj.GenerateResource.Cache
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.exe
+C:\Work\Perforce64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.pdb
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\bin\Debug\LF_PowerControl_CE.exe
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\bin\Debug\LF_PowerControl_CE.pdb
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\ResolveAssemblyReference.cache
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.Form_Main.resources
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.Properties.Resources.resources
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.csproj.GenerateResource.Cache
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.exe
+C:\Work\Pfcws64\RnD\LF_Power_Project\LF_PowerControl\LF_PowerControl_CE\obj\Debug\LF_PowerControl_CE.pdb

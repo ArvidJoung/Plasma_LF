@@ -1,0 +1,13 @@
+AutoECO Report
+FILE-A: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-2.MAX
+FILE-B: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding net GND
+Deleting J22.6 from net PIN_AD0_MFC0-
+Adding J22.6 to net GND
+Adding J8.4 to net N440237
+Adding J15.4 to net N436374
+Adding J8.3 to net N440233
+Adding J19.4 to net N436410
+*EOF*
+No errors found

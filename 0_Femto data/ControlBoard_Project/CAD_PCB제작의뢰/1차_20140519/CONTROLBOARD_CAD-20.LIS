@@ -1,0 +1,231 @@
+Post Processor Report
+OrCAD FILE: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.MAX
+Thu May 15 13:22:20 2014
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.TOP
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.TOP:
+---------------------------------------------------------
+D10:  0.0550 ROUND  --       0 Draws,      32 Flashes
+D11:  0.0520 ROUND  --       0 Draws,      10 Flashes
+D12:  0.0580 ROUND  --       0 Draws,     369 Flashes
+D13:  0.0580 SQUARE --       0 Draws,      51 Flashes
+D14:  0.1100 ROUND  --       0 Draws,       6 Flashes
+D15:  0.0620 ROUND  --       0 Draws,      20 Flashes
+D16:  0.0450 ROUND  --       0 Draws,     196 Flashes
+D17:  0.2047 ROUND  --       0 Draws,       4 Flashes
+D18:  0.0010 ROUND  --    2405 Draws,       0 Flashes
+D19:  0.0120 ROUND  --    1213 Draws,       0 Flashes
+D20:  0.0500 ROUND  --       0 Draws,     170 Flashes
+D21:  0.0500 ROUND  --     248 Draws,       0 Flashes
+D22:  0.0800 ROUND  --      54 Draws,       0 Flashes
+D23:  0.0500 ROUND  --       0 Draws,       3 Flashes
+---------------------------------------------------------
+ 14 D-Codes      -----    3920 Draws,     861 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.BOT
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.BOT:
+---------------------------------------------------------
+D19:  0.0120 ROUND  --    1164 Draws,       0 Flashes
+D20:  0.0500 ROUND  --       0 Draws,     172 Flashes
+D21:  0.0500 ROUND  --     303 Draws,       0 Flashes
+D22:  0.0800 ROUND  --      62 Draws,       0 Flashes
+D24:  0.0550 ROUND  --       0 Draws,      32 Flashes
+D25:  0.0520 ROUND  --       0 Draws,      10 Flashes
+D26:  0.0580 ROUND  --       0 Draws,     369 Flashes
+D27:  0.0580 SQUARE --       0 Draws,      51 Flashes
+D28:  0.1100 ROUND  --       0 Draws,       6 Flashes
+D29:  0.0620 ROUND  --       0 Draws,      20 Flashes
+D30:  0.0450 ROUND  --       0 Draws,     196 Flashes
+D31:  0.2047 ROUND  --       0 Draws,       4 Flashes
+D32:  0.0500 ROUND  --       0 Draws,       1 Flashes
+---------------------------------------------------------
+ 13 D-Codes      -----    1529 Draws,     861 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.GND
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.GND:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D33:  0.0750 ROUND  --       0 Draws,      32 Flashes
+D34:  0.0720 ROUND  --       0 Draws,      10 Flashes
+D35:  0.0780 ROUND  --       0 Draws,     369 Flashes
+D36:  0.0780 SQUARE --       0 Draws,      51 Flashes
+D37:  0.1160 ROUND  --       0 Draws,       6 Flashes
+D38:  0.0800 ROUND  --       0 Draws,      20 Flashes
+D39:  0.0650 ROUND  --       0 Draws,     196 Flashes
+D40:  0.2362 ROUND  --       0 Draws,       4 Flashes
+D41:  0.0750 ROUND  --       0 Draws,     129 Flashes
+D42:  0.0750 ROUND  --       0 Draws,      44 Flashes
+---------------------------------------------------------
+ 11 D-Codes      -----       4 Draws,     861 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.PWR
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.PWR:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D33:  0.0750 ROUND  --       0 Draws,      32 Flashes
+D34:  0.0720 ROUND  --       0 Draws,      10 Flashes
+D35:  0.0780 ROUND  --       0 Draws,     369 Flashes
+D36:  0.0780 SQUARE --       0 Draws,      51 Flashes
+D37:  0.1160 ROUND  --       0 Draws,       6 Flashes
+D38:  0.0800 ROUND  --       0 Draws,      20 Flashes
+D39:  0.0650 ROUND  --       0 Draws,     196 Flashes
+D40:  0.2362 ROUND  --       0 Draws,       4 Flashes
+D41:  0.0750 ROUND  --       0 Draws,     129 Flashes
+D42:  0.0750 ROUND  --       0 Draws,      44 Flashes
+---------------------------------------------------------
+ 11 D-Codes      -----       4 Draws,     861 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.SMT
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.SMT:
+---------------------------------------------------------
+D24:  0.0550 ROUND  --       0 Draws,      32 Flashes
+D25:  0.0520 ROUND  --       0 Draws,      10 Flashes
+D26:  0.0580 ROUND  --       0 Draws,     369 Flashes
+D27:  0.0580 SQUARE --       0 Draws,      51 Flashes
+D30:  0.0450 ROUND  --       0 Draws,     196 Flashes
+D31:  0.2047 ROUND  --       0 Draws,       4 Flashes
+D43:  0.1150 ROUND  --       0 Draws,       6 Flashes
+D44:  0.0670 ROUND  --       0 Draws,      20 Flashes
+D45:  0.0550 ROUND  --       0 Draws,     129 Flashes
+D46:  0.0550 ROUND  --       0 Draws,      44 Flashes
+---------------------------------------------------------
+ 10 D-Codes      -----       0 Draws,     861 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.SMB
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.SMB:
+---------------------------------------------------------
+D24:  0.0550 ROUND  --       0 Draws,      32 Flashes
+D25:  0.0520 ROUND  --       0 Draws,      10 Flashes
+D26:  0.0580 ROUND  --       0 Draws,     369 Flashes
+D27:  0.0580 SQUARE --       0 Draws,      51 Flashes
+D30:  0.0450 ROUND  --       0 Draws,     196 Flashes
+D31:  0.2047 ROUND  --       0 Draws,       4 Flashes
+D43:  0.1150 ROUND  --       0 Draws,       6 Flashes
+D44:  0.0670 ROUND  --       0 Draws,      20 Flashes
+D45:  0.0550 ROUND  --       0 Draws,     129 Flashes
+D46:  0.0550 ROUND  --       0 Draws,      44 Flashes
+---------------------------------------------------------
+ 10 D-Codes      -----       0 Draws,     861 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.SST
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.SST:
+---------------------------------------------------------
+D47:  0.0080 ROUND  --    6234 Draws,       0 Flashes
+D48:  0.0100 ROUND  --     118 Draws,       0 Flashes
+D49:  0.0150 ROUND  --      80 Draws,       0 Flashes
+---------------------------------------------------------
+  3 D-Codes      -----    6432 Draws,       0 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.AST
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.AST:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D24:  0.0550 ROUND  --       0 Draws,      32 Flashes
+D25:  0.0520 ROUND  --       0 Draws,      10 Flashes
+D26:  0.0580 ROUND  --       0 Draws,     369 Flashes
+D27:  0.0580 SQUARE --       0 Draws,      51 Flashes
+D30:  0.0450 ROUND  --       0 Draws,     196 Flashes
+D47:  0.0080 ROUND  --    8067 Draws,       0 Flashes
+D48:  0.0100 ROUND  --     474 Draws,       0 Flashes
+---------------------------------------------------------
+  8 D-Codes      -----    8545 Draws,     658 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.DRD
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.DRD:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D48:  0.0100 ROUND  --    3744 Draws,       0 Flashes
+---------------------------------------------------------
+  2 D-Codes      -----    3748 Draws,       0 Flashes
+
+*********************************************************
+
+Output file: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.FAB
+
+Aperture totals for Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-20.FAB:
+---------------------------------------------------------
+D21:  0.0500 ROUND  --       4 Draws,       0 Flashes
+D50:  0.0280 ROUND  --       0 Draws,     129 Flashes
+D51:  0.0280 ROUND  --       0 Draws,      44 Flashes
+---------------------------------------------------------
+  3 D-Codes      -----       4 Draws,     173 Flashes
+
+
+*********************************************************
+
+Aperture totals for entire project:
+---------------------------------------------------------
+D10:  0.0550 ROUND  --       0 Draws,      32 Flashes
+D11:  0.0520 ROUND  --       0 Draws,      10 Flashes
+D12:  0.0580 ROUND  --       0 Draws,     369 Flashes
+D13:  0.0580 SQUARE --       0 Draws,      51 Flashes
+D14:  0.1100 ROUND  --       0 Draws,       6 Flashes
+D15:  0.0620 ROUND  --       0 Draws,      20 Flashes
+D16:  0.0450 ROUND  --       0 Draws,     196 Flashes
+D17:  0.2047 ROUND  --       0 Draws,       4 Flashes
+D18:  0.0010 ROUND  --    2405 Draws,       0 Flashes
+D19:  0.0120 ROUND  --    2377 Draws,       0 Flashes
+D20:  0.0500 ROUND  --       0 Draws,     342 Flashes
+D21:  0.0500 ROUND  --     571 Draws,       0 Flashes
+D22:  0.0800 ROUND  --     116 Draws,       0 Flashes
+D23:  0.0500 ROUND  --       0 Draws,       3 Flashes
+D24:  0.0550 ROUND  --       0 Draws,     128 Flashes
+D25:  0.0520 ROUND  --       0 Draws,      40 Flashes
+D26:  0.0580 ROUND  --       0 Draws,    1476 Flashes
+D27:  0.0580 SQUARE --       0 Draws,     204 Flashes
+D28:  0.1100 ROUND  --       0 Draws,       6 Flashes
+D29:  0.0620 ROUND  --       0 Draws,      20 Flashes
+D30:  0.0450 ROUND  --       0 Draws,     784 Flashes
+D31:  0.2047 ROUND  --       0 Draws,      12 Flashes
+D32:  0.0500 ROUND  --       0 Draws,       1 Flashes
+D33:  0.0750 ROUND  --       0 Draws,      64 Flashes
+D34:  0.0720 ROUND  --       0 Draws,      20 Flashes
+D35:  0.0780 ROUND  --       0 Draws,     738 Flashes
+D36:  0.0780 SQUARE --       0 Draws,     102 Flashes
+D37:  0.1160 ROUND  --       0 Draws,      12 Flashes
+D38:  0.0800 ROUND  --       0 Draws,      40 Flashes
+D39:  0.0650 ROUND  --       0 Draws,     392 Flashes
+D40:  0.2362 ROUND  --       0 Draws,       8 Flashes
+D41:  0.0750 ROUND  --       0 Draws,     258 Flashes
+D42:  0.0750 ROUND  --       0 Draws,      88 Flashes
+D43:  0.1150 ROUND  --       0 Draws,      12 Flashes
+D44:  0.0670 ROUND  --       0 Draws,      40 Flashes
+D45:  0.0550 ROUND  --       0 Draws,     258 Flashes
+D46:  0.0550 ROUND  --       0 Draws,      88 Flashes
+D47:  0.0080 ROUND  --   14301 Draws,       0 Flashes
+D48:  0.0100 ROUND  --    4336 Draws,       0 Flashes
+D49:  0.0150 ROUND  --      80 Draws,       0 Flashes
+D50:  0.0280 ROUND  --       0 Draws,     129 Flashes
+D51:  0.0280 ROUND  --       0 Draws,      44 Flashes
+---------------------------------------------------------
+ 42 D-Codes      -----   24186 Draws,    5997 Flashes
+
+
+No warnings or errors.

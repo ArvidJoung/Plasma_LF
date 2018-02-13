@@ -1,0 +1,81 @@
+  Revised: Tuesday, June 24, 2014
+          Revision: 
+
+
+
+
+
+
+
+Bill Of Materials           June 26,2014      13:14:40	Page1
+
+Item	Quantity	Reference	Part
+______________________________________________
+
+1	5	C1,C2,C3,C4,C5	0.1u, ÀüÇØ Ä³ÆÐ½ÃÅÍ
+2	4	C6,C10,C14,C18	10u tantal, ÅºÅ» Ä³ÆÐ½ÃÅÍ
+3	4	C7,C11,C15,C19	0.1u mono, ¸ð³ë¸®Æ½ Ä³ÆÐ½ÃÅÍ 
+4	8	C8,C9,C12,C13,C16,C17,	1u mono, ¸ð³ë¸®Æ½ Ä³ÆÐ½ÃÅÍ
+		C20,C21
+5	1	J1	Jumper
+6	1	J2	Jumper
+7	1	J3	Jumper
+8	1	J4	Jumper
+9	1	J5	Jumper
+10	1	J6	BR-762C (6ÇÉ), PCBÅ¸ÀÔ ÅÍ¹Ì³Î ºí·°
+11	1	J7	Molex 5267-06(¹«»ö, male 6ÇÉ)
+12	1	J8	Jumper
+13	1	J9	Molex 5267-06(¹«»ö, male 6ÇÉ)
+14	1	J10	Jumper
+15	1	J11	Jumper
+16	1	J12	Molex 5267-06(¹«»ö, male 6ÇÉ)
+17	1	J13	Jumper
+18	1	J14	ÇÉÇì´õ¼ÒÄÏ Dual 2x20 Straight(2.0mm)
+19	1	J15	ÇÉÇì´õ¼ÒÄÏ Dual 2x20 Straight(2.0mm)
+20	1	J16	Molex 5267-06(¹«»ö, male 6ÇÉ)
+21	1	J17	Jumper
+22	1	J18	Molex 5267-04(¹«»ö, male 4ÇÉ)
+23	1	J19	Molex 5267-04(¹«»ö, male 4ÇÉ)
+24	1	J20	Molex 5267-04(¹«»ö, male 4ÇÉ)
+25	1	J21	Molex 5267-04(¹«»ö, male 4ÇÉ)
+26	1	J22	Molex 5267-04(¹«»ö, male 4ÇÉ)
+27	1	J23	Molex 5267-04(¹«»ö, male 4ÇÉ)
+28	1	J24	Molex 5267-04(¹«»ö, male 4ÇÉ)
+29	1	J25	Molex 5267-04(¹«»ö, male 4ÇÉ)
+30	1	J26	Molex 5267-04(¹«»ö, male 4ÇÉ)
+31	1	J27	Molex 5267-04(¹«»ö, male 4ÇÉ)
+32	1	J28	Molex 5267-04(¹«»ö, male 4ÇÉ)
+33	1	J29	Molex 5267-04(¹«»ö, male 4ÇÉ)
+34	1	J30	Molex 5267-04(¹«»ö, male 4ÇÉ)
+35	1	J31	Molex 5267-04(¹«»ö, male 4ÇÉ)
+36	1	J32	Molex 5267-04(¹«»ö, male 4ÇÉ)
+37	1	J33	Molex 5267-04(¹«»ö, male 4ÇÉ)
+38	1	J34	Molex 5267-04(¹«»ö, male 4ÇÉ)
+39	18	R1,R2,R3,R4,R5,R6,R7,R8,	4.7k, 1/4W 1% Axial Resistor
+		R9,R10,R11,R12,R13,R14,
+		R15,R16,R17,R18
+40	8	R19,R20,R21,R22,R23,R24,	56k, 1/4W 1% Axial Resistor
+		R25,R26
+41	24	R27,R28,R29,R30,R39,R40,	1.5k, 1/4W 1% Axial Resistor
+		R41,R42,R55,R56,R57,R58,
+		R60,R62,R64,R66,R79,R80,
+		R81,R82,R92,R94,R96,R98
+42	24	R31,R33,R35,R37,R47,R49,	1k, 1/4W 1% Axial Resistor
+		R51,R53,R59,R61,R63,R65,
+		R68,R70,R72,R74,R84,R86,
+		R88,R90,R91,R93,R95,R97
+43	8	R32,R34,R36,R38,R48,R50,	300, 1/4W 1% Axial Resistor
+		R52,R54
+44	8	R43,R44,R45,R46,R75,R76,	10k, 1/4W 1% Axial Resistor
+		R77,R78
+45	8	R67,R69,R71,R73,R83,R85,	2k, 1/4W 1% Axial Resistor
+		R87,R89
+46	1	U1	SIC-DIP-16ÇÉ, IC Socket
+47	1	U2	SIC-DIP-16ÇÉ, IC Socket
+48	1	U3	SIC-DIP-16ÇÉ, IC Socket
+49	1	U4	SIC-DIP-16ÇÉ, IC Socket
+50	8	U5,U6,U9,U10,U14,U15,U19,	SIC-DIP-8ÇÉ, IC Socket
+		U20
+51	4	U7,U12,U16,U21	SIC-DIP-14ÇÉ, IC Socket
+52	4	U8,U13,U17,U22	SIC-DIP-8ÇÉ, IC Socket
+53	2	U11,U18	SIC-DIP-16ÇÉ, IC Socket

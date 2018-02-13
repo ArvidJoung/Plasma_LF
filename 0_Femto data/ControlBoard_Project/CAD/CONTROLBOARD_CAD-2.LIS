@@ -1,0 +1,59 @@
+AutoECO Report
+FILE-A: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-1.MAX
+FILE-B: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding component J34
+Adding net GND_FIELD SIGNAL
+Adding net AGND
+Deleting J5.4 from net PIN_AD0_MFC0-
+Deleting J1.4 from net PIN_AD0_MFC0-
+Deleting J18.4 from net PIN_AD0_MFC0-
+Deleting R32.2 from net PIN_AD0_MFC0-
+Deleting R35.2 from net PIN_AD0_MFC0-
+Deleting R55.2 from net PIN_AD0_MFC0-
+Deleting R45.2 from net PIN_AD0_MFC0-
+Deleting R41.2 from net PIN_AD0_MFC0-
+Deleting J14.2 from net PIN_AD0_MFC0-
+Deleting J14.4 from net PIN_AD0_MFC0-
+Deleting J10.2 from net PIN_AD0_MFC0-
+Deleting J6.2 from net PIN_AD0_MFC0-
+Deleting J6.4 from net PIN_AD0_MFC0-
+Deleting J2.2 from net PIN_AD0_MFC0-
+Deleting J2.4 from net PIN_AD0_MFC0-
+Deleting R25.2 from net PIN_AD0_MFC0-
+Deleting R29.2 from net PIN_AD0_MFC0-
+Deleting J28.2 from net PIN_AD0_MFC0-
+Deleting J10.4 from net PIN_AD0_MFC0-
+Deleting J22.2 from net PIN_AD0_MFC0-
+Deleting J25.1 from net PIN_AD0_MFC0-
+Deleting R48.2 from net PIN_AD0_MFC0-
+Adding J34.2 to net PIN_AD0_MFC0-
+Adding J1.4 to net GND_FIELD SIGNAL
+Adding J5.4 to net GND_FIELD SIGNAL
+Adding J2.2 to net GND_FIELD SIGNAL
+Adding J2.4 to net GND_FIELD SIGNAL
+Adding J6.2 to net GND_FIELD SIGNAL
+Adding J6.4 to net GND_FIELD SIGNAL
+Adding J10.2 to net GND_FIELD SIGNAL
+Adding J10.4 to net GND_FIELD SIGNAL
+Adding J14.2 to net GND_FIELD SIGNAL
+Adding J14.4 to net GND_FIELD SIGNAL
+Adding J18.4 to net GND_FIELD SIGNAL
+Adding R25.2 to net GND_FIELD SIGNAL
+Adding R29.2 to net GND_FIELD SIGNAL
+Adding R32.2 to net GND_FIELD SIGNAL
+Adding R35.2 to net GND_FIELD SIGNAL
+Adding R41.2 to net GND_FIELD SIGNAL
+Adding R45.2 to net GND_FIELD SIGNAL
+Adding R48.2 to net GND_FIELD SIGNAL
+Adding R55.2 to net GND_FIELD SIGNAL
+Adding J22.2 to net GND_FIELD SIGNAL
+Adding J25.1 to net GND_FIELD SIGNAL
+Adding J28.2 to net AGND
+Adding J34.1 to net AGND
+Adding J8.4 to net N440237
+Adding J15.4 to net N436374
+Adding J8.3 to net N440233
+Adding J19.4 to net N436410
+*EOF*
+No errors found

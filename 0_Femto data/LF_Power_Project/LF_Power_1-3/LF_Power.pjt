@@ -1,0 +1,49 @@
+; Code Composer Project File, Version 2.0 (do not modify or remove this line)
+
+[Project Settings]
+ProjectDir="C:\SyncWorks\TR_2801\COMM_V330\02A_SCI_LoopBack\"
+ProjectType=Executable
+CPUFamily=TMS320C28XX
+Tool="Compiler"
+Tool="CustomBuilder"
+Tool="Linker"
+Config="Debug"
+Config="Release"
+
+[Source Files]
+Source="..\..\..\..\CCStudio_v3.3\C2000\cgtools\lib\rts2800_ml.lib"
+Source="..\..\..\TIDCS\DSP280x_common\source\DSP280x_CodeStartBranch.asm"
+Source="..\..\..\TIDCS\DSP280x_common\source\DSP280x_DefaultIsr.c"
+Source="..\..\..\TIDCS\DSP280x_common\source\DSP280x_PieCtrl.c"
+Source="..\..\..\TIDCS\DSP280x_common\source\DSP280x_PieVect.c"
+Source="..\..\..\TIDCS\DSP280x_common\source\DSP280x_Sci.c"
+Source="..\..\..\TIDCS\DSP280x_common\source\DSP280x_SysCtrl.c"
+Source="..\..\..\TIDCS\DSP280x_headers\source\DSP280x_GlobalVariableDefs.c"
+Source="02A_SCI_LoopBack.c"
+Source="..\..\..\TIDCS\DSP280x_headers\cmd\DSP280x_Headers_nonBIOS.cmd"
+Source="F2801_RAM.cmd"
+
+["Compiler" Settings: "Debug"]
+Options=-g -pdsw225 -fr"$(Proj_dir)\Debug" -i"C:\SyncWorks\TIDCS\DSP280x_headers\include" -i"C:\SyncWorks\TIDCS\DSP280x_common\include" -d"_DEBUG" -d"LARGE_MODEL" -ml -v28 --float_support=softlib
+
+["Compiler" Settings: "Release"]
+Options=-pdsw225 -o3 -fr"$(Proj_dir)\Release" -d"LARGE_MODEL" -ml -v28
+
+["Linker" Settings: "Debug"]
+Options=-c -m".\Debug\02A_SCI_LoopBack.map" -o".\Debug\02A_SCI_LoopBack.out" -stack0x3FE -w -x
+
+["Linker" Settings: "Release"]
+Options=-c -m".\Release\02A_SCI_LoopBack.map" -o".\Release\02A_SCI_LoopBack.out" -w -x
+
+["..\..\..\TIDCS\DSP280x_headers\cmd\DSP280x_Headers_nonBIOS.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["..\..\..\TIDCS\DSP280x_headers\cmd\DSP280x_Headers_nonBIOS.cmd" Settings: "Release"]
+LinkOrder=1
+
+["F2801_RAM.cmd" Settings: "Debug"]
+LinkOrder=1
+
+["F2801_RAM.cmd" Settings: "Release"]
+LinkOrder=1
+

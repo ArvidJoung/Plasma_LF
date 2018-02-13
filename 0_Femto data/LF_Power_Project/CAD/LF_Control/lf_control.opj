@@ -1,0 +1,71 @@
+(ExpressProject ""
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\lf_control.olb"
+        (Type "Schematic Library")))
+    (File ".\lf_control.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (NoModify))
+  (Folder "Outputs")
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    (R_var
+      (FullPartName "R_var.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (LM393
+      (FullPartName "LM393.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\OPAMP.OLB")
+      (DeviceIndex "0"))
+    ("HX 05-P/SP2"
+      (FullPartName "HX 05-P/SP2.Normal")
+      (LibraryName "C:\USERS\LASTDKHT\USERWORK\CAD\LF_CONTROL\LF_CONTROL.OLB")
+      (DeviceIndex "0"))
+    ("CAP POL"
+      (FullPartName "CAP POL.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (TRANSFORMER
+      (FullPartName "TRANSFORMER.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    ("CONN DSUB 9-P"
+      (FullPartName "CONN DSUB 9-P.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.3\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (HCPL-3120
+      (FullPartName "HCPL-3120.Normal")
+      (LibraryName "C:\USERS\LASTDKHT\USERWORK\CAD\LF_CONTROL\LF_CONTROL.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\Cadence\SPB_16.3\tools\capture\library")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" ".\lf_control.dsn")
+      (Path "Design Resources" ".\lf_control.dsn" "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library" ".\lf_control.olb")
+      (Select "Design Resources" ".\lf_control.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 0 258 0 577"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 50 1729 50 525")
+        (Scroll "-178 220")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\0_FEMTO DATA\LF_POWER_PROJECT\CAD\LF_CONTROL\LF_CONTROL.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1")))
+  (MPSSessionName "SWEND066"))

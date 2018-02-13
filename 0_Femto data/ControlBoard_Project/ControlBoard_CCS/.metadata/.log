@@ -1,0 +1,51 @@
+!SESSION 2014-02-12 16:42:00.310 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ko_KR
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.ui 4 4 2014-02-12 16:42:51.285
+!MESSAGE Referenced part does not exist yet: org.eclipse.cdt.ui.CView.
+
+!ENTRY org.eclipse.ui 4 4 2014-02-12 16:42:57.457
+!MESSAGE Referenced part does not exist yet: org.eclipse.cdt.ui.CView.
+
+!ENTRY com.ti.ccstudio.scripting.console 2 0 2014-02-12 16:42:59.437
+!MESSAGE Failed to setActiveScriptContext for class org.eclipse.rtsc.xdctools.model.ui.scripting.XGCONFScriptingService
+!STACK 0
+java.lang.AbstractMethodError
+	at com.ti.ccstudio.scripting.console.internal.Activator.setActiveScriptContext(Activator.java:94)
+	at com.ti.ccstudio.scripting.console.internal.Startup$1.safeRun(Startup.java:53)
+	at com.ti.ccstudio.rhino.SafeRunnable.run(SafeRunnable.java:27)
+	at com.ti.ccstudio.rhino.internal.RhinoThreadExecutor$1.run(RhinoThreadExecutor.java:67)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+	at com.ti.ccstudio.rhino.internal.RhinoThreadExecutor$RhinoThread.run(RhinoThreadExecutor.java:88)
+
+!ENTRY com.ti.ccstudio.scripting.console 2 0 2014-02-12 16:42:59.547
+!MESSAGE Failed to setActiveScriptContext for class org.eclipse.rtsc.xdctools.model.ui.scripting.XGCONFScriptingService
+!STACK 0
+java.lang.AbstractMethodError
+	at com.ti.ccstudio.scripting.console.internal.Activator.setActiveScriptContext(Activator.java:94)
+	at com.ti.ccstudio.scripting.console.internal.Startup$2$1.safeRun(Startup.java:100)
+	at com.ti.ccstudio.rhino.SafeRunnable.run(SafeRunnable.java:27)
+	at com.ti.ccstudio.rhino.internal.RhinoThreadExecutor$1.run(RhinoThreadExecutor.java:67)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+	at com.ti.ccstudio.rhino.internal.RhinoThreadExecutor$RhinoThread.run(RhinoThreadExecutor.java:88)
+
+!ENTRY com.ti.gde.adapter.c6flo 1 0 2014-02-12 16:42:59.617
+!MESSAGE install directory: C:\App\ti\ccsv5\eclipse
+
+!ENTRY com.ti.gde.adapter.c6flo 1 0 2014-02-12 16:42:59.627
+!MESSAGE blocksDirectory directory: C:\App\ti\ccsv5\ccs_base\c6flo_1.0.0.201201192237\Blocks
+
+!ENTRY com.ti.gde.adapter.c6flo 1 0 2014-02-12 16:42:59.627
+!MESSAGE xdcToolLocation directory: C:/App/ti/xdctools_3_22_04_46
+
+!ENTRY com.ti.gde.diagram 1 0 2014-02-12 16:42:59.627
+!MESSAGE GDE adapter found: com.ti.gde.adapter.c6flo.C6floAdapter   Supporting extensions: [c6flo] PluginID=com.ti.gde.adapter.c6flo

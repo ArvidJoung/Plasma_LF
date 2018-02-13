@@ -1,0 +1,148 @@
+/*
+// TI File $Revision: /main/4 $
+// Checkin $Date: September 25, 2007   16:21:33 $
+*/
+/********************************************************************/
+/* sim2801.gel                                                      */
+/* Version 3.31                                                     */
+/*                                                                  */
+/* This GEL file is to be used with the TMS320C/F2801 DSP.          */
+/* Changes may be required to support specific hardware designs.    */
+/*                                                                  */
+/* Code Composer Studio supports six reserved GEL functions that    */
+/* automatically get executed if they are defined. They are:        */
+/*                                                                  */
+/* StartUp()              - Executed whenever CCS is invoked        */
+/* OnReset()              - Executed after Debug->Reset CPU         */
+/* OnRestart()            - Executed after Debug->Restart           */
+/* OnPreFileLoaded()      - Executed before File->Load Program      */
+/* OnFileLoaded()         - Executed after File->Load Program       */
+/* OnTargetConnect()      - Executed after Debug->Connect           */
+/*                                                                  */
+/********************************************************************/
+
+StartUp()
+{
+}
+
+OnReset(int nErrorCode)
+{
+}
+
+OnRestart(int nErrorCode)
+{
+/* CCS will call OnRestart() when you do a Debug->Restart and   */
+/* after you load a new file.  Between running interrupt based  */
+/* programs, this function will clear interrupts and help keep  */
+/* the processor from going off into invalid memory.            */
+     IER = 0;
+     IFR = 0;
+}
+
+OnPreFileLoaded()
+{
+}
+
+OnFileLoaded(int nErrorCode, int bSymbolsOnly)
+{
+}
+
+OnTargetConnect()
+{
+    C_F2801_Memory_Map();           /* Initialize the CCS memory map */
+
+/* Check to see if CCS has been started-up with the DSP already */
+/* running in real-time mode.  The user can add whatever        */
+/* custom initialization stuff they want to each case.          */
+ 
+    if (GEL_IsInRealtimeMode())     /* Do real-time mode target initialization */
+    {
+        // Note: This case never executes with the simulator
+    }
+    else                            /* Do stop-mode target initialization */
+    {
+        // Note: This case always executes with the simulator
+    }
+}
+
+
+/********************************************************************/
+/*                       C/F2801 Memory Map                         */
+/*                                                                  */
+/*   Note: M0M1MAP and VMAP signals tied high on '2801 core         */
+/*                                                                  */
+/*   0x000000 - 0x0003ff   M0 SARAM                (Prog and Data)  */
+/*   0x000400 - 0x0007ff   M1 SARAM                (Prog and Data)  */
+/*   0x000800 - 0x000fff   Peripheral Frame0 (PF0) (Data only)      */
+/*   0x006000 - 0x006fff   Peripheral Frame1 (PF1) (Data only)      */
+/*   0x007000 - 0x007fff   Peripheral Frame2 (PF2) (Data only)      */
+/*   0x008000 - 0x008fff   L0 SARAM                (Prog and Data)  */
+/*   0x3d7800 - 0x3d7fff   OTP or ROM              (Prog and Data)  */
+/*   0x3f4000 - 0x3f7fff   FLASH or ROM            (Prog and Data)  */
+/*   0x3f8000 - 0x3f8fff   L0 SARAM Mirror         (Prog and Data)  */
+/*   0x3ff000 - 0x3fffff   BOOT ROM                (Prog and Data)  */
+/********************************************************************/
+menuitem "Initialize Memory Map";
+
+hotmenu C_F2801_Memory_Map()
+{
+    /* Initialize M0M1MAP and VMAP input signals high               */
+    M0M1MAP_IN = 1;       /* Maps M0 and M1 to same Prog/Data addr  */
+    VMAP_IN = 1;          /* Vectors fetched from 0x3fffc0-0x3fffff */
+
+    GEL_MapReset();
+    GEL_MapOn();
+
+    /* The OTP, FLASH/ROM, and BOOT ROM memory maps are defined as  */
+    /* writeable by GEL_MapAdd so that the debugger can load code   */
+    /* into them. The simulator configuration file defines these    */
+    /* memory blocks as flash or ROM which prevents the application */
+    /* from writing to them.                                        */
+
+    /* Program memory maps */
+    GEL_MapAdd(0x0,0,0x400,1,1);                    /* M0 SARAM        */
+    GEL_MapAdd(0x400,0,0x400,1,1);                  /* M1 SARAM        */    
+    GEL_MapAdd(0x8000,0,0x1000,1,1);                /* L0 SARAM        */
+    GEL_MapAdd(0x3d7800,0,0x400,1,1);               /* OTP or ROM      */
+    GEL_MapAdd(0x3f4000,0,0x04000,1,1);             /* FLASH or ROM    */
+    GEL_MapAdd(0x3f8000,0,0x1000,1,1);              /* L0 SARAM Mirror */
+    GEL_MapAdd(0x3ff000,0,0x1000,1,1);              /* BOOT ROM        */
+
+    /* Data memory maps */
+    GEL_MapAdd(0x0,1,0x400,1,1);                    /* M0 SARAM        */
+    GEL_MapAdd(0x400,1,0x400,1,1);                  /* M1 SARAM        */
+    GEL_MapAdd(0x800,1,0x800,1,1);                  /* PF0             */
+    GEL_MapAdd(0x6000,1,0x1000,1,1);                /* PF1             */
+    GEL_MapAddStr(0x7000,1,0x1000,"R|W|AS2",0);     /* PF2             */
+    GEL_MapAdd(0x8000,1,0x1000,1,1);                /* L0 SARAM        */
+    GEL_MapAdd(0x3d7800,1,0x800,1,1);               /* OTP or ROM      */
+    GEL_MapAdd(0x3f4000,1,0x04000,1,1);             /* FLASH or ROM    */
+    GEL_MapAdd(0x3f8000,1,0x1000,1,1);              /* L0 SARAM Mirror */
+    GEL_MapAdd(0x3ff000,1,0x1000,1,1);              /* BOOT ROM        */
+}
+
+
+/********************************************************************/
+menuitem "Addressing Modes";
+
+hotmenu C28x_Mode()
+{
+    ST1 = ST1 & (~0x0100);      /*   AMODE = 0  */
+    ST1 = ST1 | 0x0200;         /* OBJMODE = 1  */
+}
+
+hotmenu C24x_Mode()
+{
+    ST1 = ST1 | 0x0100;         /*   AMODE = 1  */
+    ST1 = ST1 | 0x0200;         /* OBJMODE = 1  */
+}
+
+hotmenu C27x_Mode()
+{
+    ST1 = ST1 & (~0x0100);      /*   AMODE = 0  */
+    ST1 = ST1 & (~0x0200);      /* OBJMODE = 0  */
+}
+
+
+/********************************************************************/
+/*** End of file ***/

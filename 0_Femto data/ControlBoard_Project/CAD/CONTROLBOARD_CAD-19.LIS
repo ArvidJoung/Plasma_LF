@@ -1,0 +1,17 @@
+AutoECO Report
+FILE-A: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD-18.MAX
+FILE-B: Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.MNL
+If "*EOF*" immediately follows, no changes were made
+Adding net PIN_DA7_1
+Deleting J16.3 from net PIN_DA7
+Adding J16.3 to net PIN_DA7_1
+Adding J8.4 to net N440237
+Adding J15.4 to net N436374
+Adding J8.3 to net N440233
+Adding J19.4 to net N436410
+Deleting component 179
+Deleting component 178
+Deleting component 177
+Deleting component 176
+*EOF*
+No errors found

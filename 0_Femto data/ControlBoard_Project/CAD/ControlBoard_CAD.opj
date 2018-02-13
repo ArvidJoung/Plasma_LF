@@ -1,0 +1,194 @@
+(ExpressProject "ControlBoard_CAD"
+  (ProjectVersion "19981106")
+  (ProjectType "PCB")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (File ".\library_dsl.olb"
+        (Type "Schematic Library")))
+    (NoModify)
+    (File ".\controlboard_cad.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (ANNOTATE_Scope "0")
+    (ANNOTATE_Mode "1")
+    (ANNOTATE_Action "0")
+    (Annotate_Page_Order "0")
+    (ANNOTATE_Reset_References_to_1 "FALSE")
+    (ANNOTATE_No_Page_Number_Change "FALSE")
+    (ANNOTATE_Property_Combine "{Value}{Source Package}{POWER_GROUP}")
+    (ANNOTATE_IncludeNonPrimitive "FALSE")
+    (Netlist_TAB "3")
+    (LAYOUT_Netlist_File "CONTROLBOARD_CAD.MNL")
+    (LAYOUT_PCB_Footprint "{PCB Footprint}")
+    (TRUE)
+    (LAYOUT_Units "0")
+    (TRUE)
+    (TRUE)
+    (TRUE)
+    (TRUE)
+    (DRC_Scope "0")
+    (DRC_Action "0")
+    (DRC_Create_Warnings "FALSE")
+    (DRC_Check_Ports "FALSE")
+    (DRC_Check_Off-Page_Connectors "FALSE")
+    (DRC_Identical_References "TRUE")
+    (DRC_Type_Mismatch "TRUE")
+    (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
+    (DRC_SDT_Compatibility "FALSE")
+    (DRC_Report_Off-grid_Objects "FALSE")
+    (DRC_Check_Unconnected_Nets "TRUE")
+    (DRC_Check_for_Misleading_TAP "FALSE")
+    (DRC_Visible_Power_pins "FALSE")
+    (DRC_Report_Netnames "FALSE")
+    (DRC_View_Output "FALSE")
+    (DRC_Report_File "Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.DRC")
+    (TRUE)
+    (TRUE)
+    (TRUE)
+    ( "TRUE")
+    (BOM_Scope "0")
+    (BOM_Mode "0")
+    (BOM_Report_File "Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.BOM")
+    (BOM_Merge_Include "FALSE")
+    (BOM_Property_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_Header "Item\tQuantity\tReference\tPart")
+    (BOM_Include_File "Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.INC")
+    (BOM_Include_File_Combine_7.0 "{Item}\t{Quantity}\t{Reference}\t{Value}")
+    (BOM_One_Part_Per_Line "FALSE")
+    (Open_BOM_in_Excel "FALSE")
+    (BOM_View_Output "FALSE"))
+  (Folder "Outputs"
+    (File ".\controlboard_cad.mnl"
+      (Type "LAYOUT Netlist File"))
+    (File ".\controlboard_cad.drc"
+      (Type "Report"))
+    (File ".\controlboard_cad.bom"
+      (Type "Report")))
+  (Folder "Referenced Projects")
+  (PartMRUSelector
+    ("GND_FIELD SIGNAL"
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (GND_SIGNAL
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (led_array_8_KB1008SR
+      (FullPartName "led_array_8_KB1008SR.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (terminal_block_3_7.62
+      (FullPartName "terminal_block_3_7.62.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (terminal_block_6_7.62
+      (FullPartName "terminal_block_6_7.62.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (molex_5267_4
+      (FullPartName "molex_5267_4.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (molex_5267_6
+      (FullPartName "molex_5267_6.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (molex_5267_8
+      (FullPartName "molex_5267_8.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (terminal_block_5_7.62
+      (FullPartName "terminal_block_5_7.62.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (ic_socket_16
+      (FullPartName "ic_socket_16.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (ic_socket_8
+      (FullPartName "ic_socket_8.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    ("CONNECTOR EDGE 20X2"
+      (FullPartName "CONNECTOR EDGE 20X2.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (CON40A
+      (FullPartName "CON40A.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VCC
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (ic_socket_14
+      (FullPartName "ic_socket_14.Normal")
+      (LibraryName "Z:\CONTROLBOARD_PROJECT\CAD\LIBRARY_DSL.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (AQW214-NO-DPST
+      (FullPartName "AQW214-NO-DPST.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (TLP620
+      (FullPartName "TLP620.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (TLP620-4
+      (FullPartName "TLP620-4.Normal")
+      (LibraryName "C:\ORCAD\ORCAD_10.5\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory "C:\OrCAD\OrCAD_10.5\tools\capture\library")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Outputs" "Z:\ControlBoard_Project\CAD\controlboard_cad.bom"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 0 326 0 749"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 192 1888 -1 947")
+        (Scroll "0 60")
+        (Zoom "62")
+        (Occurrence "/"))
+      (Path "Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.DSN")
+      (Schematic "SCHEMATIC_Main")
+      (Page "PAGE_Main"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -30 193 1889 -2 947")
+        (Scroll "0 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "Z:\CONTROLBOARD_PROJECT\CAD\CONTROLBOARD_CAD.DSN")
+      (Schematic "SCHEMATIC_Main")
+      (Page "PAGE_Connector")))
+  (MPSSessionName "Administrator"))

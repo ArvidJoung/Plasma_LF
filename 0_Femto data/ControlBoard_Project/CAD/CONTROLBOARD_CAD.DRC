@@ -1,0 +1,63 @@
+
+Checking Pins and Pin Connections
+
+--------------------------------------------------
+Checking Schematic: SCHEMATIC_Main
+--------------------------------------------------
+Checking Electrical Rules 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net SPIB_CS3
+                    SCHEMATIC_Main, PAGE_Main  (7.10, 12.55) 
+WARNING:  [DRC0004]  Possible pin type conflict J3,1 Bidirectional Connected to Power
+                    SCHEMATIC_Main, PAGE_Main  (17.00, 11.05) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD0_MFC0
+                    SCHEMATIC_Main, PAGE_Main  (6.75, 2.05) 
+WARNING:  [DRC0004]  Possible pin type conflict J2,1 Bidirectional Connected to Power
+                    SCHEMATIC_Main, PAGE_Main  (17.00, 9.35) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD5
+                    SCHEMATIC_Main, PAGE_Main  (14.00, 3.55) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net SPIB_SIMO
+                    SCHEMATIC_Main, PAGE_Main  (8.85, 12.65) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net SPIB_CLK
+                    SCHEMATIC_Main, PAGE_Main  (8.85, 13.05) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD4_PIRANI
+                    SCHEMATIC_Main, PAGE_Main  (14.00, 2.05) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD7
+                    SCHEMATIC_Main, PAGE_Main  (18.80, 2.05) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD6
+                    SCHEMATIC_Main, PAGE_Main  (18.80, 3.55) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net SPIB_CS2
+                    SCHEMATIC_Main, PAGE_Main  (5.70, 12.55) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net SPIB_CS1
+                    SCHEMATIC_Main, PAGE_Main  (5.70, 12.45) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net SPIB_CS0
+                    SCHEMATIC_Main, PAGE_Main  (5.70, 12.35) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD3_MFC3
+                    SCHEMATIC_Main, PAGE_Main  (11.55, 2.05) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD1_MFC1
+                    SCHEMATIC_Main, PAGE_Main  (6.75, 3.55) 
+ERROR:  [DRC0003]  Port has a type which is inconsistent with other ports on the net AD2_MFC2
+                    SCHEMATIC_Main, PAGE_Main  (11.55, 3.55) 
+WARNING:  [DRC0004]  Possible pin type conflict J1,1 Bidirectional Connected to Power
+                    SCHEMATIC_Main, PAGE_Main  (17.00, 8.95) 
+WARNING:  [DRC0004]  Possible pin type conflict J4,1 Bidirectional Connected to Power
+                    SCHEMATIC_Main, PAGE_Main  (17.00, 9.90) 
+WARNING:  [DRC0004]  Possible pin type conflict J5,1 Bidirectional Connected to Input Port
+                    SCHEMATIC_Main, PAGE_Main  (17.00, 10.30) 
+WARNING:  [DRC0004]  Possible pin type conflict J5,1 Bidirectional Connected to Output Port
+                    SCHEMATIC_Main, PAGE_Main  (17.00, 10.30) 
+
+Checking for Unconnected Nets
+WARNING:  [DRC0006]  Net has fewer than two connections N436410
+                    SCHEMATIC_Main, PAGE_Connector  (7.15, 6.60) 
+WARNING:  [DRC0006]  Net has fewer than two connections N436374
+                    SCHEMATIC_Main, PAGE_Connector  (7.15, 5.20) 
+WARNING:  [DRC0006]  Net has fewer than two connections N440237
+                    SCHEMATIC_Main, PAGE_Connector  (9.80, 2.35) 
+WARNING:  [DRC0006]  Net has fewer than two connections N440233
+                    SCHEMATIC_Main, PAGE_Connector  (9.80, 2.25) 
+
+Checking for Invalid References
+
+Checking for Duplicate References
+
+Check Bus width mismatch
