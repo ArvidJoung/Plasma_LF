@@ -91,15 +91,7 @@
   (MPSSessionName "SWEND066")
   (GlobalState
     (FileView
-      (Path "Design Resources")
-      (Path "Design Resources"
-         "d:\my_work\20171211_femto_lf gen\0_github_data_lf\0_femto data\generator hw data\0. orcad\ver 1.52\lf_generator.dsn")
-      (Path "Design Resources"
-         "d:\my_work\20171211_femto_lf gen\0_github_data_lf\0_femto data\generator hw data\0. orcad\ver 1.52\lf_generator.dsn"
-         "SCHEMATIC1")
-      (Select "Design Resources"
-         "d:\my_work\20171211_femto_lf gen\0_github_data_lf\0_femto data\generator hw data\0. orcad\ver 1.52\lf_generator.dsn"
-         "SCHEMATIC1" "2. description"))
+      (Path "Design Resources"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -121,7 +113,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -30 75 1758 75 594")
-        (Scroll "-116 30")
+        (Scroll "-116 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
