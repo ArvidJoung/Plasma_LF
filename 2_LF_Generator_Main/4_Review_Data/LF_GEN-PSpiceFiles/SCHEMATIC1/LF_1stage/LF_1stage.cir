@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-LF_1stage"  [ D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_Review_Data\LF_GEN-PSpiceFiles\SCHEMATIC1\LF_1stage.sim ] 
+
+** Creating circuit file "LF_1stage.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+.END

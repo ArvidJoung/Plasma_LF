@@ -1,0 +1,156 @@
+
+**** 04/10/18 17:42:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_Review_Data\LF_GEN-PSp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "LF_1stage.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LF_GEN
+X_Q1         N00379 N00197 N00241 awb2n3904 PARAMS:                            
++                 
+X_Q2         0 N00197 N00241 awb2n3906 PARAMS:                                 
++            
+R_R1         N00448 N00197  1k TC=0,0 
+C_C1         N00448 N00197  22n  TC=0,0 
+L_L1         N00305 0  1000uH  
+C_C2         N00241 N00305  10u  TC=0,0 
+V_V1         N00379 0 DC 15V  
+V_V2         N00448 0  
++PULSE 0V 5V 0 0 0 2usec 20usec
+C_C3         0 N00379  47u  TC=0,0 
+
+**** RESUMING LF_1stage.cir ****
+.END
+
+**** 04/10/18 17:42:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_Review_Data\LF_GEN-PSp
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1.model4     X_Q2.model7     
+               NPN             PNP             
+       LEVEL    1               1            
+          IS  172.800000E-18  218.880000E-15 
+          EG    1.206                        
+          BF  254.395         200            
+          NF     .85            1.221        
+         VAF   10              50            
+         IKF     .016374         .15         
+         ISE    9.974460E-15    2.364000E-12 
+          NE    1.20863         2.155        
+          BR     .1             4.68         
+          NR     .891964        1.221        
+         VAR    7.74046       500            
+         IKR     .163741                     
+         ISC    9.974460E-15                 
+          NC    2.84343         1            
+         ISS    0               0            
+          RB   28.3394         12            
+         RBM     .01           12            
+         IRB     .01                         
+          RE    1.339110E-03     .1          
+          RC    2.08353         1.5          
+         CJE    4.566140E-12    6.250000E-12 
+         VJE     .4              .916        
+         MJE     .245712         .3898       
+         CJC    3.724850E-12    6.600000E-12 
+         VJC     .4             1.67         
+         MJC     .236002         .4065       
+        XCJC     .8              .5          
+         CJS    0               0            
+         VJS     .75             .7          
+         MJS     .5              .5          
+          FC     .519152                     
+          TF  481.412000E-12  361.720000E-12 
+         XTF     .9628         21            
+         VTF    9.52193         4.7          
+         ITF     .011333         .26         
+          TR    1.303990E-06   19.920000E-09 
+         XTB    1.20888         1.7          
+         XTI    1.34879                      
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.2          
+           D     .87             .52         
+
+
+**** 04/10/18 17:42:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_Review_Data\LF_GEN-PSp
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00197) 173.1E-09 (N00241)     .1323 (N00305)    0.0000 (N00379)   15.0000     
+
+(N00448)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.874E-10
+    V_V2         1.731E-10
+
+    TOTAL POWER DISSIPATION   2.81E-09  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/10/18 17:42:58 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_Review_Data\LF_GEN-PSp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

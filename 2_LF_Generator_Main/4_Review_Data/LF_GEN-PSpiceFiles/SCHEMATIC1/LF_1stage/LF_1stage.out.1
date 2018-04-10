@@ -1,0 +1,51 @@
+
+**** 04/10/18 17:26:56 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_Review_Data\LF_GEN-PSp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "LF_1stage.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_16.5/tools/capture/library/pspice/Arvid/ /2N3906.LIB" 
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+---------------------------------------------------------------------------$
+ERROR(ORPSIM-16276): Can't find library
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source LF_GEN
+X_Q1         N00379 N00197 N00241 awb2n3904 PARAMS:                            
++                 
+X_Q2         0 N00197 N00241 awb2n3906 PARAMS:                                 
++            
+R_R1         N00448 N00197  1k TC=0,0 
+C_C1         N00448 N00197  22n  TC=0,0 
+L_L1         N00305 0  10uH  
+C_C2         N00241 N00305  10u  TC=0,0 
+V_V1         N00379 0 DC 15V  
+V_V2         N00448 0  
++PULSE 0V 5V 0 0 0 2usec 20usec
+C_C3         0 N00379  47u  TC=0,0 
+
+**** RESUMING LF_1stage.cir ****
+.END
+
