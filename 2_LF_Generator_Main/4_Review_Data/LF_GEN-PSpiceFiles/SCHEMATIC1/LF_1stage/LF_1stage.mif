@@ -1,2 +1,7 @@
- lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\bjn.lib, offset=89158, size=1497
+ lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\diode.lib, offset=588693, size=221
+ lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\diode.lib, offset=590236, size=224
+ lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\irf.lib, offset=586195, size=1711
  lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\bjp.lib, offset=92131, size=1361
+ lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\bjn.lib, offset=89158, size=1497
+ lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\pspice_elem.lib, offset=1156, size=470
+ lib=C:\Cadence\SPB_16.5\tools\PSpice\Library\templates.lib, offset=2413917, size=4408

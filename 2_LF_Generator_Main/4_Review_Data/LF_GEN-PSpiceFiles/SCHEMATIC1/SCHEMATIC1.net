@@ -1,13 +1,103 @@
 * source LF_GEN
-X_Q1         N00379 N00197 N00241 awb2n3904 PARAMS:                            
-+                 
-X_Q2         0 N00197 N00241 awb2n3906 PARAMS:                                 
+X_M3         N17266 N17574 0 IRFP460
+X_TX6    N17266 N17866 N17848 0 SCHEMATIC1_TX6 
+V_V7         N17606 0  
++PULSE 0V 15V 20usec 0 0 2usec 20usec
+X_Q6         0 N17368 N17406 awb2n3906 PARAMS:                                 
 +            
-R_R1         N00448 N00197  1k TC=0,0 
-C_C1         N00448 N00197  22n  TC=0,0 
-L_L1         N00305 0  1000uH  
-C_C2         N00241 N00305  10u  TC=0,0 
-V_V1         N00379 0 DC 15V  
-V_V2         N00448 0  
-+PULSE 0V 5V 0 0 0 2usec 20usec
-C_C3         0 N00379  47u  TC=0,0 
+R_R24         N18326 N18162  1k TC=0,0 
+R_R15         N17606 N17368  1k TC=0,0 
+X_TX5    N18246 0 N17568 0 SCHEMATIC1_TX5 
+C_C14         N18326 N18162  22n  TC=0,0 
+R_R19         N17836 N17842  2M TC=0,0 
+X_Q7         N18278 N18162 N18216 awb2n3904 PARAMS:                            
++                 
+R_R22         0 N17866  150k TC=0,0 
+R_R23         N17266 N18076  10k TC=0,0 
+C_C13         0 N17866  2.2u  TC=0,0 
+R_R18         N17842 N17848  2M TC=0,0 
+V_V9         N18326 0  
++PULSE 0V 15V 30usec 0 0 2usec 20usec
+R_R17         N17574 N17568  10 TC=0,0 
+C_C12         N17866 N17914  2.2u  TC=0,0 
+C_C11         0 N17468  47u  TC=0,0 
+R_R20         0 N17836  10k TC=0,0 
+X_Q8         0 N18162 N18216 awb2n3906 PARAMS:                                 
++            
+V_V6         N17468 0 DC 15V  
+X_M4         N17914 N18076 N17266 IRFP460
+X_TX4    N17436 0 N18546 N17266 SCHEMATIC1_TX4 
+C_C9         N17606 N17368  22n  TC=0,0 
+V_V8         N18278 0 DC 15V  
+V_V10         N17914 0 DC 220V  
+R_R25         N18076 N18546  10 TC=0,0 
+C_C16         0 N18278  47u  TC=0,0 
+X_Q5         N17468 N17368 N17406 awb2n3904 PARAMS:                            
++                 
+R_R16         0 N17574  10k TC=0,0 
+R_R21         N17866 N17914  150k TC=0,0 
+D_D7         N18076 N215871 D1N4740A 
+D_D6         N17266 N215871 D1N4744A 
+D_D8         0 N216631 D1N4744A 
+D_D9         N17574 N216631 D1N4740A 
+X_C21         N17406 N17436 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
++  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
+X_C22         N18216 N18246 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
++  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
+X_Q10         0 N29025 N29079 awb2n3906 PARAMS:                                
++             
+R_R30         N29493 N29499  2M TC=0,0 
+X_TX7    N29093 0 N30183 N28939 SCHEMATIC1_TX7 
+V_V13         N29915 0 DC 15V  
+X_M6         N29581 N30189 N28939 IRFP460
+R_R29         N29499 N28939  2M TC=0,0 
+X_C23         N29079 N29093 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
++  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
+X_Q9         N29125 N29025 N29079 awb2n3904 PARAMS:                            
++                 
+V_V12         N29263 0  
++PULSE 0V 15V 20usec 0 0 2usec 20usec
+X_Q12         0 N29819 N28917 awb2n3906 PARAMS:                                
++             
+V_V14         N29963 0  
++PULSE 0V 15V 30usec 0 0 2usec 20usec
+R_R36         N30189 N30183  10 TC=0,0 
+R_R35         N29963 N29819  1k TC=0,0 
+R_R26         N29263 N29025  1k TC=0,0 
+C_C29         N29963 N29819  22n  TC=0,0 
+X_Q11         N29915 N29819 N28917 awb2n3904 PARAMS:                           
++                  
+C_C26         0 N29125  47u  TC=0,0 
+V_V15         N29581 0 DC 220V  
+C_C25         N29263 N29025  22n  TC=0,0 
+R_R31         N29483 N29493  10k TC=0,0 
+C_C30         0 N29915  47u  TC=0,0 
+V_V11         N29125 0 DC 15V  
+R_R38         0 N29483  150k TC=0,0 
+D_D15         N30189 N337331 D1N4740A 
+R_R39         N28939 N30189  10k TC=0,0 
+D_D14         N28939 N337331 D1N4744A 
+
+.subckt SCHEMATIC1_TX6 1 2 3 4  
+K_TX6         L1_TX6 L2_TX6 1
+L1_TX6         1 2 1000uH
+L2_TX6         3 4 5000uH
+.ends SCHEMATIC1_TX6
+
+.subckt SCHEMATIC1_TX5 1 2 3 4  
+K_TX5         L1_TX5 L2_TX5 1
+L1_TX5         1 2 1000uH
+L2_TX5         3 4 2000uH
+.ends SCHEMATIC1_TX5
+
+.subckt SCHEMATIC1_TX4 1 2 3 4  
+K_TX4         L1_TX4 L2_TX4 1
+L1_TX4         1 2 1000uH
+L2_TX4         3 4 2000uH
+.ends SCHEMATIC1_TX4
+
+.subckt SCHEMATIC1_TX7 1 2 3 4  
+K_TX7         L1_TX7 L2_TX7 1
+L1_TX7         1 2 100uH
+L2_TX7         3 4 200uH
+.ends SCHEMATIC1_TX7
