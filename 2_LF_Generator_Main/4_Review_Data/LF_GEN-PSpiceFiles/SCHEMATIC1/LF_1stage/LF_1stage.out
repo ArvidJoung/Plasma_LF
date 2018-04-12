@@ -1,7 +1,7 @@
 
-**** 04/12/18 13:21:09 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/12/18 23:30:25 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     CIRCUIT DESCRIPTION
@@ -136,9 +136,9 @@ L2_TX7         3 4 200uH
 **** RESUMING LF_1stage.cir ****
 .END
 
-**** 04/12/18 13:21:09 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/12/18 23:30:25 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     Diode MODEL PARAMETERS
@@ -199,9 +199,9 @@ L2_TX7         3 4 200uH
           RS    3.000000E-06                 
 
 
-**** 04/12/18 13:21:09 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/12/18 23:30:25 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     BJT MODEL PARAMETERS
@@ -306,9 +306,9 @@ L2_TX7         3 4 200uH
            D     .52             .87             .52             .87         
 
 
-**** 04/12/18 13:21:09 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/12/18 23:30:25 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -351,9 +351,9 @@ L2_TX7         3 4 200uH
        XPART    0               0               0            
 
 
-**** 04/12/18 13:21:09 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/12/18 23:30:25 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -461,9 +461,9 @@ L2_TX7         3 4 200uH
 
           JOB CONCLUDED
 
-**** 04/12/18 13:21:09 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/12/18 23:30:25 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     JOB STATISTICS SUMMARY
@@ -473,5 +473,5 @@ L2_TX7         3 4 200uH
 
 
 
-  Total job time (using Solver 1)   =         .45
+  Total job time (using Solver 1)   =         .36
 
