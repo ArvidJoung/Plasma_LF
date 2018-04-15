@@ -26,13 +26,20 @@
     (Folder "Model Libraries"
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
-  (MPSSessionName "SWEND066")
   (GlobalState
     (FileView
       (Path "Design Resources")
+      (Path "Design Resources"
+         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn")
+      (Path "Design Resources"
+         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
+         "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles"))
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources"
+         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
+         "SCHEMATIC1" "PAGE2"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -42,23 +49,23 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 75 1758 75 554")
-        (Scroll "283 187")
-        (Zoom "134")
+        (Placement "44 2 3 -1 -1 -8 -30 50 1476 50 460")
+        (Scroll "-18 474")
+        (Zoom "110")
         (Occurrence "/"))
       (Path
-         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+         "E:\MY_WORK\20180114_PLASMA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 125 1515 125 604")
-        (Scroll "-205 0")
-        (Zoom "67")
+        (Placement "44 0 1 -1 -1 -8 -30 75 1501 75 485")
+        (Scroll "0 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+         "E:\MY_WORK\20180114_PLASMA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE2")))
   (PartMRUSelector
