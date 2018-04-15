@@ -34,45 +34,49 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn")
+         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn")
       (Path "Design Resources"
-         "C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
+         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "Design Resources"
-         "C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
+         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
          "SCHEMATIC1" "PAGE2"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 437"))
+        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 437"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 52 1689 52 521")
-        (Scroll "220 584")
+        (Placement "44 2 3 -1 -1 -8 -30 100 1454 100 579")
+        (Scroll "143 121")
         (Zoom "134")
         (Occurrence "/"))
       (Path
-         "C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+         "E:\MY_WORK\20180114_PLASMA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1423 78 547")
+        (Placement "44 0 1 -1 -1 -8 -30 175 1529 175 654")
         (Scroll "0 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+         "E:\MY_WORK\20180114_PLASMA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE2")))
   (PartMRUSelector
+    (d
+      (FullPartName "d.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
     (L
       (FullPartName "L.Normal")
       (LibraryName

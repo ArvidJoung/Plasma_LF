@@ -235,6 +235,57 @@
             )
         )
         ("VSRC")
+        ("C"
+            ("info"
+                ("spice_dsg"	"C")
+                ("port_order"
+                    ("1")
+                    ("2")
+                )
+            )
+            ("model_params"
+                ("level_0"
+                    ("IC"
+                        ("value"	"0")
+                    )
+                    ("TC"
+                        ("value"	"0")
+                    )
+                    ("VALUE"
+                        ("value"	"0")
+                    )
+                )
+            )
+            ("smoke"
+                ("pre_smoke"
+                    ("NODE_VA"	"1")
+                    ("NODE_VB"	"2")
+                    ("TERM_A"	"-1")
+                    ("DERATE_TYPE"	"CAP")
+                )
+                ("max_ops"
+                    ("CV"	"VOLTAGE")
+                    ("CI"	"CURRENT")
+                    ("SLP"	"SLOPE")
+                    ("TBRK"	"KNEE")
+                    ("TMAX"	"MAX_TEMP")
+                )
+                ("smoke_tests"
+                    ("CV"
+                        ("test"	"abs_voltage_test")
+                        ("nodes"
+                            ("NODE_VA")
+                            ("NODE_VB")
+                        )
+                    )
+                    ("CI"
+                        ("test"	"abs_current_test")
+                        ("term"	"TERM_A")
+                    )
+                )
+                ("device_max_ops")
+            )
+        )
         ("R"
             ("info"
                 ("spice_dsg"	"R")
@@ -290,57 +341,6 @@
                 ("device_max_ops")
             )
         )
-        ("C"
-            ("info"
-                ("spice_dsg"	"C")
-                ("port_order"
-                    ("1")
-                    ("2")
-                )
-            )
-            ("model_params"
-                ("level_0"
-                    ("IC"
-                        ("value"	"0")
-                    )
-                    ("TC"
-                        ("value"	"0")
-                    )
-                    ("VALUE"
-                        ("value"	"0")
-                    )
-                )
-            )
-            ("smoke"
-                ("pre_smoke"
-                    ("NODE_VA"	"1")
-                    ("NODE_VB"	"2")
-                    ("TERM_A"	"-1")
-                    ("DERATE_TYPE"	"CAP")
-                )
-                ("max_ops"
-                    ("CV"	"VOLTAGE")
-                    ("CI"	"CURRENT")
-                    ("SLP"	"SLOPE")
-                    ("TBRK"	"KNEE")
-                    ("TMAX"	"MAX_TEMP")
-                )
-                ("smoke_tests"
-                    ("CV"
-                        ("test"	"abs_voltage_test")
-                        ("nodes"
-                            ("NODE_VA")
-                            ("NODE_VB")
-                        )
-                    )
-                    ("CI"
-                        ("test"	"abs_current_test")
-                        ("term"	"TERM_A")
-                    )
-                )
-                ("device_max_ops")
-            )
-        )
     )
     ("instances"
         ("M5"
@@ -359,52 +359,56 @@
                 )
             )
         )
-        ("R31"
-            ("device_name"	"R")
-            ("pspice_path"	"R_R31")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"10k")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-            )
-            ("smoke_vars"
-                ("POWER"	"0.25")
-                ("SLOPE"	"0.005")
-                ("MAX_TEMP"	"200.0")
-            )
-        )
-        ("R29"
-            ("device_name"	"R")
-            ("pspice_path"	"R_R29")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"2M")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-            )
-            ("smoke_vars"
-                ("POWER"	"0.25")
-                ("SLOPE"	"0.005")
-                ("MAX_TEMP"	"200.0")
-            )
-        )
         ("M6"
             ("device_name"	"IRFP460")
             ("pspice_path"	"X_M6")
             ("level"	"0")
         )
-        ("R30"
-            ("device_name"	"R")
-            ("pspice_path"	"R_R30")
+        ("C30"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C30")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"2M")
+                    ("value"	"2.2u")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("C31"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C31")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"2.2u")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
+        )
+        ("R41"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R41")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -415,9 +419,26 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("R27"
+        ("R42"
             ("device_name"	"R")
-            ("pspice_path"	"R_R27")
+            ("pspice_path"	"R_R42")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("R43"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R43")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
@@ -432,28 +453,9 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("C27"
-            ("device_name"	"C")
-            ("pspice_path"	"C_C27")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"2.2u")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-            )
-            ("smoke_vars"
-                ("VOLTAGE"	"50.0")
-                ("CURRENT"	"1.0")
-                ("SLOPE"	"0.005")
-                ("KNEE"	"125.0")
-                ("MAX_TEMP"	"125.0")
-            )
-        )
-        ("R34"
+        ("R44"
             ("device_name"	"R")
-            ("pspice_path"	"R_R34")
+            ("pspice_path"	"R_R44")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
@@ -468,47 +470,132 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("C28"
-            ("device_name"	"C")
-            ("pspice_path"	"C_C28")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"2.2u")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-            )
-            ("smoke_vars"
-                ("VOLTAGE"	"50.0")
-                ("CURRENT"	"1.0")
-                ("SLOPE"	"0.005")
-                ("KNEE"	"125.0")
-                ("MAX_TEMP"	"125.0")
-            )
-        )
-        ("C29"
-            ("device_name"	"C")
-            ("pspice_path"	"C_C29")
-            ("level"	"0")
-            ("model_params"
-                ("VALUE"
-                    ("value"	"2.2u")
-                    ("pspice_param"	"VALUE")
-                    ("distrib"	"FLAT")
-                )
-            )
-            ("smoke_vars"
-                ("VOLTAGE"	"50.0")
-                ("CURRENT"	"1.0")
-                ("SLOPE"	"0.005")
-                ("KNEE"	"125.0")
-                ("MAX_TEMP"	"125.0")
-            )
-        )
-        ("R38"
+        ("R45"
             ("device_name"	"R")
-            ("pspice_path"	"R_R38")
+            ("pspice_path"	"R_R45")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("V16"
+            ("device_name"	"VSRC")
+            ("pspice_path"	"V_V16")
+            ("level"	"0")
+            ("model_params"
+                ("DC"
+                    ("value"	"220V")
+                    ("pspice_param"	"DC")
+                )
+            )
+        )
+        ("M7"
+            ("device_name"	"IRFP460")
+            ("pspice_path"	"X_M7")
+            ("level"	"0")
+        )
+        ("R48"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R48")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("R47"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R47")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("R46"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R46")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("M8"
+            ("device_name"	"IRFP460")
+            ("pspice_path"	"X_M8")
+            ("level"	"0")
+        )
+        ("R50"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R50")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("R49"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R49")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10k")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("POWER"	"0.25")
+                ("SLOPE"	"0.005")
+                ("MAX_TEMP"	"200.0")
+            )
+        )
+        ("R51"
+            ("device_name"	"R")
+            ("pspice_path"	"R_R51")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
@@ -523,9 +610,9 @@
                 ("MAX_TEMP"	"200.0")
             )
         )
-        ("R39"
+        ("R52"
             ("device_name"	"R")
-            ("pspice_path"	"R_R39")
+            ("pspice_path"	"R_R52")
             ("level"	"0")
             ("model_params"
                 ("VALUE"
