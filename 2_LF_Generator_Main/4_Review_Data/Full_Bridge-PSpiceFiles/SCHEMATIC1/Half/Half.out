@@ -1,0 +1,209 @@
+
+**** 04/15/18 18:50:16 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Half"  [ C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\Full_Bridge-PSpiceFiles\SCH
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Half.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FULL_BRIDGE
+X_M5         N47026 N47022 0 IRFP460
+V_V15         N47198 0 DC 220V  
+R_R31         0 N47120  10k TC=0,0 
+R_R29         N47126 N47132  2M TC=0,0 
+X_M6         N47198 N47334 N47026 IRFP460
+R_R30         N47120 N47126  2M TC=0,0 
+X_TX9    N47026 N49438 N47132 0 SCHEMATIC1_TX9 
+R_R27         0 N47022  10k TC=0,0 
+C_C27         N47212 N47198  2.2u  TC=0,0 
+R_R34         N47026 N47334  10k TC=0,0 
+V_V12         N47334 0  
++PULSE 0V 15V 20usec 0 0 2usec 20usec
+V_V14         N47022 0  
++PULSE 0V 15V 30usec 0 0 2usec 20usec
+C_C28         0 N47212  2.2u  TC=0,0 
+C_C29         N49438 N47212  2.2u  TC=0,0 
+R_R38         N47212 N47198  150k TC=0,0 
+R_R39         0 N47212  150k TC=0,0 
+
+.subckt SCHEMATIC1_TX9 1 2 3 4  
+K_TX9         L1_TX9 L2_TX9 1
+L1_TX9         1 2 1000uH
+L2_TX9         3 4 5000uH
+.ends SCHEMATIC1_TX9
+
+**** RESUMING Half.cir ****
+.END
+
+**** 04/15/18 18:50:16 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Half"  [ C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\Full_Bridge-PSpiceFiles\SCH
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M5.MD         X_M5.MD1        X_M5.MD2        X_M5.MD3        
+          IS   10.000000E-18    0             100.000000E-12  100.000000E-12 
+           N     .70113        50                                            
+          BV  500                                                            
+         IBV  250.000000E-06                                                 
+          RS    9.080380E-03                    3.000000E-06                 
+         CJO    6.161040E-09    5.000000E-09                                 
+          VJ    1.30742         1.83303                                      
+           M     .9              .9                                          
+          FC                   10.000000E-09                                 
+          EG    1.00085                                                      
+         XTI    1.00002                                                      
+
+
+               X_M6.MD         X_M6.MD1        X_M6.MD2        X_M6.MD3        
+          IS   10.000000E-18    0             100.000000E-12  100.000000E-12 
+           N     .70113        50                                            
+          BV  500                                                            
+         IBV  250.000000E-06                                                 
+          RS    9.080380E-03                    3.000000E-06                 
+         CJO    6.161040E-09    5.000000E-09                                 
+          VJ    1.30742         1.83303                                      
+           M     .9              .9                                          
+          FC                   10.000000E-09                                 
+          EG    1.00085                                                      
+         XTI    1.00002                                                      
+
+
+**** 04/15/18 18:50:16 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Half"  [ C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\Full_Bridge-PSpiceFiles\SCH
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_M5.MM         X_M6.MM         
+               NMOS            NMOS            
+       LEVEL    1               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    3.854           3.854        
+          KP   29.2045         29.2045       
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA     .010185         .010185     
+          IS    0               0            
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO   42.055500E-06   42.055500E-06 
+        CGDO   10.000000E-12   10.000000E-12 
+        CGBO    0               0            
+         TOX    0               0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 04/15/18 18:50:16 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Half"  [ C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\Full_Bridge-PSpiceFiles\SCH
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N47022)    0.0000 (N47026)     .1099 (N47120)    0.0000 (N47126)    0.0000     
+
+(N47132)    0.0000 (N47198)  220.0000 (N47212)  110.0000 (N47334)    0.0000     
+
+(N49438)     .1099 (X_M5.4)    0.0000 (X_M5.5)     .1099 (X_M5.6)     .1099     
+
+(X_M5.7) 978.9E-15 (X_M5.8) 3.107E-15 (X_M5.9)     .1099 (X_M6.4)    0.0000     
+
+(X_M6.5)  220.0000 (X_M6.6)  220.0000 (X_M6.7) 1.960E-09 (X_M6.8)     .1099     
+
+(X_M6.9)  220.0000 (X_M5.10)     .1099                   (X_M5.11)     .1099    
+
+(X_M6.10)  220.0000                   (X_M6.11)  220.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V15       -7.443E-04
+    V_V12        1.099E-05
+    V_V14        3.297E-13
+    X_M5.VFI2    1.099E-13
+    X_M5.VFI1    0.000E+00
+    X_M6.VFI2    2.200E-10
+    X_M6.VFI1    0.000E+00
+
+    TOTAL POWER DISSIPATION   1.64E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 04/15/18 18:50:16 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Half"  [ C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\Full_Bridge-PSpiceFiles\SCH
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .13
+

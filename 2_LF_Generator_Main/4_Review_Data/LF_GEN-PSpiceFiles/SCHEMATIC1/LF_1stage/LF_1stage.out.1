@@ -1,7 +1,7 @@
 
-**** 04/12/18 13:19:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/15/18 14:18:41 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-LF_1stage"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-psp
+ ** Profile: "SCHEMATIC1-LF_1stage"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\sch
 
 
  ****     CIRCUIT DESCRIPTION
@@ -75,41 +75,51 @@ X_C21         N17406 N17436 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
 X_C22         N18216 N18246 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-X_Q10         0 N29025 N29079 awb2n3906 PARAMS:                                
-+             
-R_R30         N29493 N29499  2M TC=0,0 
-X_TX7    N29093 0 N30183 N28939 SCHEMATIC1_TX7 
-V_V13         N29915 0 DC 15V  
-X_M6         N29575 N30189 N28939 IRFP460
-R_R29         N29499 N28939  2M TC=0,0 
-X_C23         N29079 N29093 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
-+  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-X_Q9         N29125 N29025 N29079 awb2n3904 PARAMS:                            
-+                 
-V_V12         N29263 0  
-+PULSE 0V 15V 20usec 0 0 2usec 20usec
-X_Q12         0 N29819 N28917 awb2n3906 PARAMS:                                
-+             
-V_V14         N29963 0  
+X_M6         N39386 N39548 N38758 IRFP460
+C_C30         0 N39730  47u  TC=0,0 
+R_R27         0 N39046  10k TC=0,0 
+D_D11         N39548 N401081 D1N4740A 
+X_TX8    N39698 0 N39040 0 SCHEMATIC1_TX8 
+V_V14         N39778 0  
 +PULSE 0V 15V 30usec 0 0 2usec 20usec
-R_R36         N30189 N30183  10 TC=0,0 
-R_R35         N29963 N29819  1k TC=0,0 
-R_R26         N29263 N29025  1k TC=0,0 
-C_C29         N29963 N29819  22n  TC=0,0 
-X_Q11         N29915 N29819 N28917 awb2n3904 PARAMS:                           
+C_C26         0 N38944  47u  TC=0,0 
+C_C28         0 N39338  2.2u  TC=0,0 
+R_R31         0 N39308  10k TC=0,0 
+V_V13         N39730 0 DC 15V  
+V_V15         N39386 0 DC 220V  
+R_R33         0 N39338  150k TC=0,0 
+X_TX7    N38912 0 N39998 N39552 SCHEMATIC1_TX7 
+D_D13         N39046 N401561 D1N4740A 
+X_TX9    N38758 N39338 N39320 0 SCHEMATIC1_TX9 
+X_Q9         N38944 N38844 N38898 awb2n3904 PARAMS:                            
++                 
+X_Q10         0 N38844 N38898 awb2n3906 PARAMS:                                
++             
+X_Q11         N39730 N39634 N38736 awb2n3904 PARAMS:                           
 +                  
-C_C26         0 N29125  47u  TC=0,0 
-V_V15         N29575 0 DC 220V  
-C_C25         N29263 N29025  22n  TC=0,0 
-R_R31         N29483 N29493  10k TC=0,0 
-C_C30         0 N29915  47u  TC=0,0 
-V_V11         N29125 0 DC 15V  
-X_C24         N28917 N29883 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
+D_D10         N39552 N401081 D1N4744A 
+R_R34         N39552 N39548  10k TC=0,0 
+V_V11         N38944 0 DC 15V  
+C_C29         N39778 N39634  22n  TC=0,0 
+R_R30         N39308 N39314  2M TC=0,0 
+R_R28         N39046 N39040  10 TC=0,0 
+X_C24         N38736 N39698 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-R_R38         0 N29483  150k TC=0,0 
-D_D15         N30189 N337331 D1N4740A 
-R_R39         N28939 N30189  10k TC=0,0 
-D_D14         N28939 N337331 D1N4744A 
+R_R36         N39548 N39998  10 TC=0,0 
+V_V12         N39078 0  
++PULSE 0V 15V 20usec 0 0 2usec 20usec
+R_R35         N39778 N39634  1k TC=0,0 
+C_C27         N39338 N39386  2.2u  TC=0,0 
+D_D12         0 N401561 D1N4744A 
+X_C23         N38898 N38912 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
++  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
+R_R32         N39338 N39386  150k TC=0,0 
+X_M5         N38758 N39046 0 IRFP460
+R_R29         N39314 N39320  2M TC=0,0 
+X_Q12         0 N39634 N38736 awb2n3906 PARAMS:                                
++             
+R_R26         N39078 N38844  1k TC=0,0 
+C_C31         N39078 N38844  22n  TC=0,0 
 
 .subckt SCHEMATIC1_TX6 1 2 3 4  
 K_TX6         L1_TX6 L2_TX6 1
@@ -129,14 +139,34 @@ L1_TX4         1 2 1000uH
 L2_TX4         3 4 2000uH
 .ends SCHEMATIC1_TX4
 
+.subckt SCHEMATIC1_TX8 1 2 3 4  
+K_TX8         L1_TX8 L2_TX8 1
+L1_TX8         1 2 1000uH
+L2_TX8         3 4 2000uH
+.ends SCHEMATIC1_TX8
+
 .subckt SCHEMATIC1_TX7 1 2 3 4  
 K_TX7         L1_TX7 L2_TX7 1
 L1_TX7         1 2 1000uH
 L2_TX7         3 4 2000uH
 .ends SCHEMATIC1_TX7
 
+.subckt SCHEMATIC1_TX9 1 2 3 4  
+K_TX9         L1_TX9 L2_TX9 1
+L1_TX9         1 2 1000uH
+L2_TX9         3 4 5000uH
+.ends SCHEMATIC1_TX9
+
 **** RESUMING LF_1stage.cir ****
 .END
 
-ERROR(ORPSIM-15141): Less than 2 connections at node N29883.
+ERROR(ORPSIM-15142): Node N39548 is floating
+
+ERROR(ORPSIM-15142): Node N401081 is floating
+
+ERROR(ORPSIM-15142): Node N39552 is floating
+
+ERROR(ORPSIM-15142): Node N39998 is floating
+
+ERROR(ORPSIM-15142): Node X_M6.7 is floating
 

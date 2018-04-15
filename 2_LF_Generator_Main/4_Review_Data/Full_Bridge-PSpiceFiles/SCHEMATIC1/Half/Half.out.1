@@ -1,0 +1,60 @@
+
+**** 04/15/18 18:47:33 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Half"  [ C:\WORK\PROJECT\2_PLASMA_LF_GENERATOR\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\Full_Bridge-PSpiceFiles\SCH
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Half.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FULL_BRIDGE
+X_M5         N47026 N47022 0 IRFP460
+V_V15         N47198 0 DC 220V  
+R_R31         0 N47120  10k TC=0,0 
+R_R29         N47126 N47132  2M TC=0,0 
+X_M6         N47198 N47334 N47026 IRFP460
+R_R30         N47120 N47126  2M TC=0,0 
+X_TX9    N47026 N49438 N47132 0 SCHEMATIC1_TX9 
+R_R27         0 N47022  10k TC=0,0 
+C_C27         N47212 N47198  2.2u  TC=0,0 
+R_R34         N47026 N47334  10k TC=0,0 
+V_V12         N47334 0  
++PULSE 0V 15V 20usec 0 0 2usec 20usec
+V_V14         N47022 0  
++PULSE 0V 15V 30usec 0 0 2usec 20usec
+C_C28         0 N47212  2.2u  TC=0,0 
+C_C29         N49438 N47212  1n  TC=0,0 
+
+.subckt SCHEMATIC1_TX9 1 2 3 4  
+K_TX9         L1_TX9 L2_TX9 1
+L1_TX9         1 2 1000uH
+L2_TX9         3 4 5000uH
+.ends SCHEMATIC1_TX9
+
+**** RESUMING Half.cir ****
+.END
+
+ERROR(ORPSIM-15142): Node N47212 is floating
+
