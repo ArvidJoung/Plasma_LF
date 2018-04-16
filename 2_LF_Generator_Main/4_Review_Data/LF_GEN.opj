@@ -34,16 +34,16 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources"
-         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn")
+         "D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn")
       (Path "Design Resources"
-         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
+         "D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
          "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
       (Path "PSpice Resources" "Simulation Profiles")
       (Select "Design Resources"
-         "E:\My_Work\20180114_Plasma_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
-         "SCHEMATIC1" "PAGE2"))
+         "D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
+         "SCHEMATIC1" "PAGE3"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -53,34 +53,45 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 100 1454 100 579")
-        (Scroll "143 121")
-        (Zoom "134")
+        (Placement "44 0 1 -1 -1 -8 -30 25 1704 25 500")
+        (Scroll "-119 0")
+        (Zoom "100")
         (Occurrence "/"))
       (Path
-         "E:\MY_WORK\20180114_PLASMA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 175 1529 175 654")
-        (Scroll "0 0")
+        (Placement "44 0 1 -1 -1 -8 -30 75 1758 75 554")
+        (Scroll "-121 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
-         "E:\MY_WORK\20180114_PLASMA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE2")))
+      (Page "PAGE2"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -30 100 1783 100 579")
+        (Scroll "283 136")
+        (Zoom "134")
+        (Occurrence "/"))
+      (Path
+         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE3")))
   (PartMRUSelector
-    (d
-      (FullPartName "d.Normal")
-      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
-      (DeviceIndex "0"))
     (L
       (FullPartName "L.Normal")
       (LibraryName
          "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (d
+      (FullPartName "d.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
       (DeviceIndex "0"))
     (JR220V
       (FullPartName "JR220V.Normal")
@@ -168,4 +179,5 @@
          "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
-     "C:\Cadence\SPB_16.5\tools\capture\library\pspice\advanls"))
+     "C:\Cadence\SPB_16.5\tools\capture\library\pspice\advanls")
+  (MPSSessionName "SWEND066"))
