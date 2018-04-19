@@ -1,5 +1,5 @@
 
-**** 04/18/18 15:28:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 3000us 0 
+.TRAN  0 100us 0 
 .PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
 
@@ -31,7 +31,7 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source LF_GEN
 X_M3         N17266 N17574 0 IRFP460
-X_TX6    N17266 N17866 N17848 0 SCHEMATIC1_TX6 
+X_TX6    N17266 N17866 N17836 0 SCHEMATIC1_TX6 
 V_V7         N17606 0  
 +PULSE 0V 15V 20usec 0 0 2usec 20usec
 X_Q6         0 N17368 N17406 awb2n3906 PARAMS:                                 
@@ -40,19 +40,17 @@ R_R24         N18326 N18162  1k TC=0,0
 R_R15         N17606 N17368  1k TC=0,0 
 X_TX5    N18246 0 N17568 0 SCHEMATIC1_TX5 
 C_C14         N18326 N18162  22n  TC=0,0 
-R_R19         N17836 N17842  2M TC=0,0 
 X_Q7         N18278 N18162 N18220 awb2n3904 PARAMS:                            
 +                 
 R_R22         0 N17866  150k TC=0,0 
 R_R23         N17266 N18076  10k TC=0,0 
-C_C13         0 N17866  2.2u  TC=0,0 
-R_R18         N17842 N17848  2M TC=0,0 
+C_C13         0 N17866  20u  TC=0,0 
 V_V9         N18326 0  
 +PULSE 0V 15V 30usec 0 0 2usec 20usec
 R_R17         N17574 N17568  10 TC=0,0 
-C_C12         N17866 N17914  2.2u  TC=0,0 
+C_C12         N17866 N17914  20u  TC=0,0 
 C_C11         0 N17468  47u  TC=0,0 
-R_R20         0 N17836  10k TC=0,0 
+R_R20         0 N17836  150 TC=0,0 
 X_Q8         0 N18162 N18220 awb2n3906 PARAMS:                                 
 +            
 V_V6         N17468 0 DC 15V  
@@ -82,7 +80,7 @@ D_D23         0 N913351 D1N4744A
 X_C46         N90119 N90133 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
 C_C51         0 N90555  2.2u  TC=0,0 
-R_R66         0 N90525  10k TC=0,0 
+R_R66         0 N90525  150 TC=0,0 
 X_Q18         N90931 N90843 N90893 awb2n3904 PARAMS:                           
 +                  
 X_C47         N90893 N90899 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
@@ -94,12 +92,10 @@ R_R67         N90555 N90603  150k TC=0,0
 C_C49         0 N90165  47u  TC=0,0 
 R_R61         N90303 N90065  1k TC=0,0 
 X_TX14    N90899 0 N90261 0 SCHEMATIC1_TX14 
-R_R64         N90531 N90537  2M TC=0,0 
 X_M10         N90603 N90757 N89977 IRFP460
 C_C50         N90555 N90603  2.2u  TC=0,0 
 X_TX13    N90133 0 N91199 N89977 SCHEMATIC1_TX13 
 D_D25         N90267 N913351 D1N4740A 
-R_R65         N90525 N90531  2M TC=0,0 
 X_Q16         N90165 N90065 N90119 awb2n3904 PARAMS:                           
 +                  
 D_D24         N90757 N913111 D1N4740A 
@@ -115,7 +111,7 @@ R_R63         N90267 N90261  10 TC=0,0
 R_R69         N89977 N90757  10k TC=0,0 
 D_D22         N89977 N913111 D1N4744A 
 V_V23         N90931 0 DC 15V  
-X_TX15    N89977 N90555 N90537 0 SCHEMATIC1_TX15 
+X_TX15    N89977 N90555 N90525 0 SCHEMATIC1_TX15 
 R_R71         N90757 N91199  10 TC=0,0 
 X_M9         N89977 N90267 0 IRFP460
 C_C54         N89977 N91629  20u  TC=0,0 
@@ -127,8 +123,8 @@ D_D27         N17574 N852271 D1N4740A
 
 .subckt SCHEMATIC1_TX6 1 2 3 4  
 K_TX6         L1_TX6 L2_TX6 1
-L1_TX6         1 2 1000uH
-L2_TX6         3 4 5000uH
+L1_TX6         1 2 600uH
+L2_TX6         3 4 15000uH
 .ends SCHEMATIC1_TX6
 
 .subckt SCHEMATIC1_TX5 1 2 3 4  
@@ -157,14 +153,14 @@ L2_TX13         3 4 5000uH
 
 .subckt SCHEMATIC1_TX15 1 2 3 4  
 K_TX15         L1_TX15 L2_TX15 1
-L1_TX15         1 2 1000uH
-L2_TX15         3 4 5000uH
+L1_TX15         1 2 600uH
+L2_TX15         3 4 15000uH
 .ends SCHEMATIC1_TX15
 
 **** RESUMING Trans.cir ****
 .END
 
-**** 04/18/18 15:28:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -241,7 +237,7 @@ L2_TX15         3 4 5000uH
           RS    3.000000E-06                 
 
 
-**** 04/18/18 15:28:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -348,7 +344,7 @@ L2_TX15         3 4 5000uH
            D     .87             .52             .87             .52         
 
 
-**** 04/18/18 15:28:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -392,16 +388,8 @@ L2_TX15         3 4 5000uH
          VDD    5               5               5               5            
        XPART    0               0               0               0            
 
-
-WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V7.
-
-WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V9.
-
-WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V22.
-
-WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V24.
 
-**** 04/18/18 15:28:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -418,19 +406,17 @@ WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for 
 
 (N17266)  110.0000 (N17368) 150.0E-09 (N17406) 413.0E-12 (N17436)    0.0000     
 
-(N17468)   15.0000 (N17568)-423.5E-24 (N17574) 3.296E-09 (N17606)    0.0000     
+(N17468)   15.0000 (N17568)-464.9E-24 (N17574) 3.296E-09 (N17606)    0.0000     
 
-(N17836)    0.0000 (N17842)    0.0000 (N17848)    0.0000 (N17866)  110.0000     
+(N17836)    0.0000 (N17866)  110.0000 (N17914)  220.0000 (N18076)  110.0000     
 
-(N17914)  220.0000 (N18076)  110.0000 (N18162) 150.0E-09 (N18220) 413.0E-12     
+(N18162) 150.0E-09 (N18220) 413.0E-12 (N18246)    0.0000 (N18278)   15.0000     
 
-(N18246)    0.0000 (N18278)   15.0000 (N18326)    0.0000 (N18546)  110.0000     
+(N18326)    0.0000 (N18546)  110.0000 (N89977)  110.0000 (N90065) 150.0E-09     
 
-(N89977)  110.0000 (N90065) 150.0E-09 (N90119) 413.0E-12 (N90133)    0.0000     
+(N90119) 413.0E-12 (N90133)    0.0000 (N90165)   15.0000 (N90261)-423.5E-24     
 
-(N90165)   15.0000 (N90261)-413.6E-27 (N90267) 3.296E-09 (N90303)    0.0000     
-
-(N90525)    0.0000 (N90531)    0.0000 (N90537)    0.0000 (N90555)  110.0000     
+(N90267) 3.296E-09 (N90303)    0.0000 (N90525)    0.0000 (N90555)  110.0000     
 
 (N90603)  220.0000 (N90757)  110.0000 (N90843) 150.0E-09 (N90893) 413.0E-12     
 
@@ -535,7 +521,7 @@ WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for 
 
           JOB CONCLUDED
 
-**** 04/18/18 15:28:39 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -547,5 +533,5 @@ WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for 
 
 
 
-  Total job time (using Solver 1)   =       15.85
+  Total job time (using Solver 1)   =         .41
 

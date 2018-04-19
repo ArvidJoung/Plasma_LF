@@ -14,7 +14,7 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "3000us" 
++0 "100us" 
 +1 "" 
 +2 "0" 
 +3 "" 
