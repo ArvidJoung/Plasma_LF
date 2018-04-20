@@ -1,5 +1,5 @@
-
-**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+**** 04/20/18 09:27:18 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -160,7 +160,7 @@ L2_TX15         3 4 15000uH
 **** RESUMING Trans.cir ****
 .END
 
-**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/20/18 09:27:18 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -237,7 +237,7 @@ L2_TX15         3 4 15000uH
           RS    3.000000E-06                 
 
 
-**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/20/18 09:27:18 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -344,7 +344,7 @@ L2_TX15         3 4 15000uH
            D     .87             .52             .87             .52         
 
 
-**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/20/18 09:27:18 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -389,7 +389,7 @@ L2_TX15         3 4 15000uH
        XPART    0               0               0               0            
 
 
-**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/20/18 09:27:18 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -521,7 +521,7 @@ L2_TX15         3 4 15000uH
 
           JOB CONCLUDED
 
-**** 04/19/18 15:36:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/20/18 09:27:18 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -533,5 +533,5 @@ L2_TX15         3 4 15000uH
 
 
 
-  Total job time (using Solver 1)   =         .41
+  Total job time (using Solver 1)   =         .44
 

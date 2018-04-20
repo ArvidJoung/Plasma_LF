@@ -45,8 +45,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 25 1704 25 500")
-        (Scroll "0 156")
+        (Placement "44 2 3 -1 -1 -8 -30 25 1704 25 500")
+        (Scroll "-3 156")
         (Zoom "134")
         (Occurrence "/"))
       (Path
@@ -56,8 +56,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 75 1758 75 554")
-        (Scroll "-3 117")
+        (Placement "44 0 1 -1 -1 -8 -30 75 1758 75 554")
+        (Scroll "0 91")
         (Zoom "134")
         (Occurrence "/"))
       (Path
