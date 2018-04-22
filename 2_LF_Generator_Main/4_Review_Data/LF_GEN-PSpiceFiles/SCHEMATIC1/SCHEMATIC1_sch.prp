@@ -1463,7 +1463,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"150")
+                    ("value"	"50")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1611,57 +1611,6 @@
                 ("POWER"	"0.25")
                 ("SLOPE"	"0.005")
                 ("MAX_TEMP"	"200.0")
-            )
-        )
-        ("C21"
-            ("device_name"	"awbcapacitor")
-            ("pspice_path"	"X_C21")
-            ("level"	"0")
-            ("model_params"
-                ("CAP"
-                    ("value"	"10U")
-                    ("pspice_param"	"CAP")
-                )
-                ("C1"
-                    ("value"	"10N")
-                    ("pspice_param"	"C1")
-                )
-                ("C2"
-                    ("value"	"2")
-                    ("pspice_param"	"C2")
-                )
-                ("C3"
-                    ("value"	"111")
-                    ("pspice_param"	"C3")
-                )
-                ("ESL"
-                    ("value"	"100U")
-                    ("pspice_param"	"ESL")
-                )
-                ("RESL"
-                    ("value"	"10")
-                    ("pspice_param"	"RESL")
-                )
-                ("ESR"
-                    ("value"	"11")
-                    ("pspice_param"	"ESR")
-                )
-                ("RP"
-                    ("value"	"12M")
-                    ("pspice_param"	"RP")
-                )
-                ("TC"
-                    ("value"	"100")
-                    ("pspice_param"	"TC")
-                )
-                ("TC1_ESR"
-                    ("value"	"10")
-                    ("pspice_param"	"TC1_ESR")
-                )
-                ("TC2_ESR"
-                    ("value"	"10")
-                    ("pspice_param"	"TC2_ESR")
-                )
             )
         )
         ("C22"
@@ -1823,7 +1772,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"150")
+                    ("value"	"50")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2187,7 +2136,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"20u")
+                    ("value"	"0.2u")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2206,7 +2155,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"150")
+                    ("value"	"50")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2223,7 +2172,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"150")
+                    ("value"	"50")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2240,7 +2189,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"20u")
+                    ("value"	"0.2u")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -2262,6 +2211,25 @@
             ("device_name"	"1N4740A")
             ("pspice_path"	"D_D27")
             ("level"	"0")
+        )
+        ("C56"
+            ("device_name"	"C")
+            ("pspice_path"	"C_C56")
+            ("level"	"0")
+            ("model_params"
+                ("VALUE"
+                    ("value"	"10U")
+                    ("pspice_param"	"VALUE")
+                    ("distrib"	"FLAT")
+                )
+            )
+            ("smoke_vars"
+                ("VOLTAGE"	"50.0")
+                ("CURRENT"	"1.0")
+                ("SLOPE"	"0.005")
+                ("KNEE"	"125.0")
+                ("MAX_TEMP"	"125.0")
+            )
         )
     )
 )
