@@ -41,40 +41,7 @@
       (Type "COrCapturePMDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 0 200 0 437"))
-      (Tab 0))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 25 1704 25 500")
-        (Scroll "-3 156")
-        (Zoom "134")
-        (Occurrence "/"))
-      (Path
-         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 75 1758 75 554")
-        (Scroll "0 91")
-        (Zoom "134")
-        (Occurrence "/"))
-      (Path
-         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE2"))
-    (Doc
-      (Type "COrSchematicDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 100 1783 100 579")
-        (Scroll "-352 0")
-        (Zoom "67")
-        (Occurrence "/"))
-      (Path
-         "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE3")))
+      (Tab 0)))
   (PartMRUSelector
     (L
       (FullPartName "L.Normal")
@@ -171,5 +138,4 @@
          "C:\CADENCE\SPB_16.5\TOOLS\CAPTURE\LIBRARY\PSPICE\ADVANLS\BJN.OLB")
       (DeviceIndex "0")))
   (LastUsedLibraryBrowseDirectory
-     "C:\Cadence\SPB_16.5\tools\capture\library\pspice\advanls")
-  (MPSSessionName "SWEND066"))
+     "C:\Cadence\SPB_16.5\tools\capture\library\pspice\advanls"))
