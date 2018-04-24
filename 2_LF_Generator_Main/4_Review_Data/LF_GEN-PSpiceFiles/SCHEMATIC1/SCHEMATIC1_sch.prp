@@ -1463,7 +1463,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"50")
+                    ("value"	"200")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )
@@ -1532,8 +1532,12 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"220V")
+                    ("value"	"300V")
                     ("pspice_param"	"DC")
+                )
+                ("AC"
+                    ("value"	"0")
+                    ("pspice_param"	"AC")
                 )
             )
         )
@@ -1772,7 +1776,7 @@
             ("level"	"0")
             ("model_params"
                 ("VALUE"
-                    ("value"	"50")
+                    ("value"	"200")
                     ("pspice_param"	"VALUE")
                     ("distrib"	"FLAT")
                 )

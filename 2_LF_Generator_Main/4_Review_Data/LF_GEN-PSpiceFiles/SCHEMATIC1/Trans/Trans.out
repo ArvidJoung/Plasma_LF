@@ -1,7 +1,7 @@
 
-**** 04/22/18 17:50:01 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/24/18 16:35:31 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     CIRCUIT DESCRIPTION
@@ -50,7 +50,7 @@ V_V9         N18326 0
 R_R17         N17574 N17568  10 TC=0,0 
 C_C12         N17866 N17914  20u  TC=0,0 
 C_C11         0 N17468  47u  TC=0,0 
-R_R20         0 N17836  50 TC=0,0 
+R_R20         0 N17836  200 TC=0,0 
 X_Q8         0 N18162 N18220 awb2n3906 PARAMS:                                 
 +            
 V_V6         N17468 0 DC 15V  
@@ -58,7 +58,7 @@ X_M4         N17914 N18076 N17266 IRFP460
 X_TX4    N17436 0 N18546 N17266 SCHEMATIC1_TX4 
 C_C9         N17606 N17368  22n  TC=0,0 
 V_V8         N18278 0 DC 15V  
-V_V10         N17914 0 DC 220V  
+V_V10         N17914 0 DC 300V AC 0 
 R_R25         N18076 N18546  10 TC=0,0 
 C_C16         0 N18278  47u  TC=0,0 
 X_Q5         N17468 N17368 N17406 awb2n3904 PARAMS:                            
@@ -78,7 +78,7 @@ D_D23         0 N913351 D1N4744A
 X_C46         N90119 N90133 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
 C_C51         0 N90555  2.2u  TC=0,0 
-R_R66         0 N90525  50 TC=0,0 
+R_R66         0 N90525  200 TC=0,0 
 X_Q18         N90931 N90843 N90893 awb2n3904 PARAMS:                           
 +                  
 X_C47         N90893 N90899 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
@@ -159,9 +159,9 @@ L2_TX15         3 4 15000uH
 **** RESUMING Trans.cir ****
 .END
 
-**** 04/22/18 17:50:01 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/24/18 16:35:31 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     Diode MODEL PARAMETERS
@@ -236,9 +236,9 @@ L2_TX15         3 4 15000uH
           RS    3.000000E-06                 
 
 
-**** 04/22/18 17:50:01 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/24/18 16:35:31 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     BJT MODEL PARAMETERS
@@ -343,9 +343,9 @@ L2_TX15         3 4 15000uH
            D     .87             .52             .87             .52         
 
 
-**** 04/22/18 17:50:01 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/24/18 16:35:31 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -388,9 +388,9 @@ L2_TX15         3 4 15000uH
        XPART    0               0               0               0            
 
 
-**** 04/22/18 17:50:01 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/24/18 16:35:31 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -403,15 +403,15 @@ L2_TX15         3 4 15000uH
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N17266)  110.0000 (N17368) 173.1E-09 (N17406)     .1323 (N17436)    0.0000     
+(N17266)  150.0000 (N17368) 173.1E-09 (N17406)     .1323 (N17436)    0.0000     
 
-(N17468)   15.0000 (N17568) 423.5E-24 (N17574) 3.296E-09 (N17606)    0.0000     
+(N17468)   15.0000 (N17568) 423.5E-24 (N17574) 4.494E-09 (N17606)    0.0000     
 
-(N17836)    0.0000 (N17866)  110.0000 (N17914)  220.0000 (N18076)  110.0000     
+(N17836)    0.0000 (N17866)  150.0000 (N17914)  300.0000 (N18076)  150.0000     
 
 (N18162) 150.0E-09 (N18220) 413.0E-12 (N18246)    0.0000 (N18278)   15.0000     
 
-(N18326)    0.0000 (N18546)  110.0000 (N89977)  110.0000 (N90065) 150.0E-09     
+(N18326)    0.0000 (N18546)  150.0000 (N89977)  110.0000 (N90065) 150.0E-09     
 
 (N90119) 413.0E-12 (N90133)    0.0000 (N90165)   15.0000 (N90261) 507.9E-24     
 
@@ -421,17 +421,17 @@ L2_TX15         3 4 15000uH
 
 (N90899)    0.0000 (N90931)   15.0000 (N90979)    0.0000 (N91199)  110.0000     
 
-(N91629)  220.0000 (N92147)  110.0000 (X_M3.4)    0.0000 (X_M3.5)  110.0000     
+(N91629)  220.0000 (N92147)  110.0000 (X_M3.4)    0.0000 (X_M3.5)  150.0000     
 
-(X_M3.6)  110.0000 (X_M3.7) 4.276E-09 (X_M3.8) 3.110E-12 (X_M3.9)  110.0000     
+(X_M3.6)  150.0000 (X_M3.7) 5.831E-09 (X_M3.8) 4.241E-12 (X_M3.9)  150.0000     
 
-(X_M4.4)    0.0000 (X_M4.5)  110.0000 (X_M4.6)  110.0000 (X_M4.7)  110.0000     
+(X_M4.4)    0.0000 (X_M4.5)  150.0000 (X_M4.6)  150.0000 (X_M4.7)  150.0000     
 
-(X_M4.8)  110.0000 (X_M4.9)  220.0000 (X_M9.4)    0.0000 (X_M9.5)  110.0000     
+(X_M4.8)  150.0000 (X_M4.9)  300.0000 (X_M9.4)    0.0000 (X_M9.5)  110.0000     
 
 (X_M9.6)  110.0000 (X_M9.7) 4.276E-09 (X_M9.8) 3.110E-12 (X_M9.9)  110.0000     
 
-(N851801)  110.0000                   (N852271) 2.582E-09                       
+(N851801)  150.0000                   (N852271) 3.521E-09                       
 
 (N913111)  110.0000                   (N913351) 2.582E-09                       
 
@@ -441,9 +441,9 @@ L2_TX15         3 4 15000uH
 
 (X_M10.8)  110.0000                   (X_M10.9)  220.0000                       
 
-(X_M3.10)  110.0000                   (X_M3.11)  110.0000                       
+(X_M3.10)  150.0000                   (X_M3.11)  150.0000                       
 
-(X_M4.10)  110.0000                   (X_M4.11)  110.0000                       
+(X_M4.10)  150.0000                   (X_M4.11)  150.0000                       
 
 (X_M9.10)  110.0000                   (X_M9.11)  110.0000                       
 
@@ -489,30 +489,30 @@ L2_TX15         3 4 15000uH
     V_V9         1.500E-10
     V_V6        -1.874E-10
     V_V8        -1.875E-10
-    V_V10       -7.388E-04
+    V_V10       -1.008E-03
     V_V22        1.500E-10
     V_V24        1.500E-10
     V_V21       -1.875E-10
     V_V25       -7.388E-04
     V_V23       -1.875E-10
-    X_M3.VFI2    1.100E-10
+    X_M3.VFI2    1.500E-10
     X_M3.VFI1    0.000E+00
-    X_M4.VFI2    1.100E-10
+    X_M4.VFI2    1.500E-10
     X_M4.VFI1    0.000E+00
     X_M10.VFI2   1.100E-10
     X_M10.VFI1   0.000E+00
     X_M9.VFI2    1.100E-10
     X_M9.VFI1    0.000E+00
 
-    TOTAL POWER DISSIPATION   3.25E-01  WATTS
+    TOTAL POWER DISSIPATION   4.65E-01  WATTS
 
 
 
           JOB CONCLUDED
 
-**** 04/22/18 17:50:01 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/24/18 16:35:31 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     JOB STATISTICS SUMMARY
@@ -522,5 +522,5 @@ L2_TX15         3 4 15000uH
 
 
 
-  Total job time (using Solver 1)   =         .75
+  Total job time (using Solver 1)   =        1.06
 
