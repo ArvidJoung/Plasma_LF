@@ -14,7 +14,7 @@ Notes=
 @End General
 @Analysis: 0 1
 +0 0 0 0 
-+0 "300us" 
++0 "100us" 
 +1 "" 
 +2 "0" 
 +3 "" 
@@ -110,6 +110,7 @@ SaveFile 0 ""
 @End Analysis
 @Analysis: 11 1
 + 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
++ ITL4 "5"
 + 0 0 0 0 0 0 0 0 0
 @End Analysis
 @Analysis: 12 0
