@@ -1,5 +1,5 @@
 
-**** 04/18/18 11:35:10 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/25/18 16:22:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -22,7 +22,7 @@
 .lib "nom.lib" 
 
 *Analysis directives: 
-.TRAN  0 80us 0 
+.TRAN  0 1000us 0 
 .PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
 .INC "..\SCHEMATIC1.net" 
 
@@ -31,7 +31,7 @@
 **** INCLUDING SCHEMATIC1.net ****
 * source LF_GEN
 X_M3         N17266 N17574 0 IRFP460
-X_TX6    N17266 N17866 N17848 0 SCHEMATIC1_TX6 
+X_TX6    N17266 N17866 N17836 0 SCHEMATIC1_TX6 
 V_V7         N17606 0  
 +PULSE 0V 15V 20usec 0 0 2usec 20usec
 X_Q6         0 N17368 N17406 awb2n3906 PARAMS:                                 
@@ -40,19 +40,17 @@ R_R24         N18326 N18162  1k TC=0,0
 R_R15         N17606 N17368  1k TC=0,0 
 X_TX5    N18246 0 N17568 0 SCHEMATIC1_TX5 
 C_C14         N18326 N18162  22n  TC=0,0 
-R_R19         N17836 N17842  2M TC=0,0 
 X_Q7         N18278 N18162 N18220 awb2n3904 PARAMS:                            
 +                 
 R_R22         0 N17866  150k TC=0,0 
 R_R23         N17266 N18076  10k TC=0,0 
-C_C13         0 N17866  2.2u  TC=0,0 
-R_R18         N17842 N17848  2M TC=0,0 
+C_C13         0 N17866  20u  TC=0,0 
 V_V9         N18326 0  
 +PULSE 0V 15V 30usec 0 0 2usec 20usec
 R_R17         N17574 N17568  10 TC=0,0 
-C_C12         N17866 N17914  2.2u  TC=0,0 
+C_C12         N17866 N17914  20u  TC=0,0 
 C_C11         0 N17468  47u  TC=0,0 
-R_R20         0 N17836  10k TC=0,0 
+R_R20         0 N17836  200 TC=0,0 
 X_Q8         0 N18162 N18220 awb2n3906 PARAMS:                                 
 +            
 V_V6         N17468 0 DC 15V  
@@ -60,70 +58,17 @@ X_M4         N17914 N18076 N17266 IRFP460
 X_TX4    N17436 0 N18546 N17266 SCHEMATIC1_TX4 
 C_C9         N17606 N17368  22n  TC=0,0 
 V_V8         N18278 0 DC 15V  
-V_V10         N17914 0 DC 220V  
+V_V10         N17914 0 DC 300V AC 0 
 R_R25         N18076 N18546  10 TC=0,0 
 C_C16         0 N18278  47u  TC=0,0 
 X_Q5         N17468 N17368 N17406 awb2n3904 PARAMS:                            
 +                 
 R_R16         0 N17574  10k TC=0,0 
 R_R21         N17866 N17914  150k TC=0,0 
-X_C21         N17406 N17436 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
-+  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
 X_C22         N18220 N18246 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-D_D15         N74229 N747891 D1N4740A 
-X_M8         N74067 N74229 N73437 IRFP460
-C_C37         0 N74019  100u  TC=0,0 
-V_V16         N73625 0 DC 15V  
-X_Q13         0 N73525 N73579 awb2n3906 PARAMS:                                
-+             
-C_C36         N74019 N74067  100u  TC=0,0 
-X_Q12         N73625 N73525 N73579 awb2n3904 PARAMS:                           
-+                  
-X_TX11    N74379 0 N73721 0 SCHEMATIC1_TX11 
-R_R42         N73727 N73721  10 TC=0,0 
-R_R48         N73437 N74229  10k TC=0,0 
-X_C33         N73433 N74379 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
-+  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-V_V17         N73759 0  
-+PULSE 0V 15V 20usec 0 0 2usec 20usec
-X_M7         N73437 N73727 0 IRFP460
-C_C34         N73759 N73525  22n  TC=0,0 
-R_R50         N74229 N74679  10 TC=0,0 
-C_C35         0 N73625  47u  TC=0,0 
-C_C39         0 N74411  47u  TC=0,0 
-X_Q14         N74411 N74315 N73433 awb2n3904 PARAMS:                           
-+                  
-X_Q15         0 N74315 N73433 awb2n3906 PARAMS:                                
-+             
-X_C32         N73579 N73593 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
-+  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-R_R49         N74459 N74315  1k TC=0,0 
-D_D17         N73727 N748391 D1N4740A 
-C_C38         N74459 N74315  22n  TC=0,0 
-V_V19         N74459 0  
-+PULSE 0V 15V 30usec 0 0 2usec 20usec
-V_V20         N74067 0 DC 220V  
-R_R40         N73759 N73525  1k TC=0,0 
-V_V18         N74411 0 DC 15V  
-D_D14         N73437 N747891 D1N4744A 
-R_R41         0 N73727  10k TC=0,0 
-R_R45         0 N82857  10k TC=0,0 
-X_TX12    N73437 N74019 N74001 0 SCHEMATIC1_TX12 
-X_TX10    N73593 0 N74679 N73437 SCHEMATIC1_TX10 
-D_D16         0 N748391 D1N4744A 
-R_R53         N74019 N74067  150k TC=0,0 
-R_R54         0 N74019  150k TC=0,0 
-R_R55         N82824 N74001  2M TC=0,0 
-R_R56         N82857 N82824  2M TC=0,0 
-C_C44         N73437 N84007  20u  TC=0,0 
-R_R59         N84007 N74067  150 TC=0,0 
-C_C45         0 N84294  20u  TC=0,0 
-R_R60         N84294 N74019  150 TC=0,0 
 D_D18         N17266 N851801 D1N4744A 
 D_D19         0 N852271 D1N4744A 
-D_D20         N18076 N851801 D1N4740A 
-D_D21         N17574 N852271 D1N4740A 
 V_V22         N90303 0  
 +PULSE 0V 15V 20usec 0 0 2usec 20usec
 V_V24         N90979 0  
@@ -133,7 +78,7 @@ D_D23         0 N913351 D1N4744A
 X_C46         N90119 N90133 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
 C_C51         0 N90555  2.2u  TC=0,0 
-R_R66         0 N90525  10k TC=0,0 
+R_R66         0 N90525  200 TC=0,0 
 X_Q18         N90931 N90843 N90893 awb2n3904 PARAMS:                           
 +                  
 X_C47         N90893 N90899 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
@@ -145,12 +90,10 @@ R_R67         N90555 N90603  150k TC=0,0
 C_C49         0 N90165  47u  TC=0,0 
 R_R61         N90303 N90065  1k TC=0,0 
 X_TX14    N90899 0 N90261 0 SCHEMATIC1_TX14 
-R_R64         N90531 N90537  2M TC=0,0 
 X_M10         N90603 N90757 N89977 IRFP460
 C_C50         N90555 N90603  2.2u  TC=0,0 
 X_TX13    N90133 0 N91199 N89977 SCHEMATIC1_TX13 
 D_D25         N90267 N913351 D1N4740A 
-R_R65         N90525 N90531  2M TC=0,0 
 X_Q16         N90165 N90065 N90119 awb2n3904 PARAMS:                           
 +                  
 D_D24         N90757 N913111 D1N4740A 
@@ -166,18 +109,63 @@ R_R63         N90267 N90261  10 TC=0,0
 R_R69         N89977 N90757  10k TC=0,0 
 D_D22         N89977 N913111 D1N4744A 
 V_V23         N90931 0 DC 15V  
-X_TX15    N89977 N90555 N90537 0 SCHEMATIC1_TX15 
+X_TX15    N89977 N90555 N90525 0 SCHEMATIC1_TX15 
 R_R71         N90757 N91199  10 TC=0,0 
 X_M9         N89977 N90267 0 IRFP460
-C_C54         N89977 N91629  20u  TC=0,0 
-R_R72         N91629 N90603  150 TC=0,0 
-R_R73         N92147 N90555  150 TC=0,0 
-C_C55         0 N92147  20u  TC=0,0 
+C_C54         N89977 N91629  0.2u  TC=0,0 
+R_R72         N91629 N90603  50 TC=0,0 
+R_R73         N92147 N90555  50 TC=0,0 
+C_C55         0 N92147  0.2u  TC=0,0 
+D_D26         N18076 N851801 D1N4740A 
+D_D27         N17574 N852271 D1N4740A 
+C_C56         N17406 N17436  10U  TC=0,0 
+R_R75         0 N108256  10k TC=0,0 
+D_D31         0 N1082441 D1N4744A 
+D_D30         N108260 N1082201 D1N4744A 
+C_C59         0 N108448  47u  TC=0,0 
+C_C61         0 N108790  20u  TC=0,0 
+X_TX16    N108416 0 N109434 N108260 SCHEMATIC1_TX16 
+C_C64         N108402 N108416  10U  TC=0,0 
+R_R79         0 N108790  150k TC=0,0 
+X_M11         N108260 N108256 0 IRFP460
+X_Q20         N108448 N108348 N108402 awb2n3904 PARAMS:                        
++                     
+X_Q22         N109166 N109078 N109128 awb2n3904 PARAMS:                        
++                     
+V_V28         N109166 0 DC 15V  
+X_M12         N108838 N108232 N108260 IRFP460
+R_R77         0 N108766  200 TC=0,0 
+R_R76         N108256 N108544  10 TC=0,0 
+C_C58         N108588 N108348  22n  TC=0,0 
+R_R82         N108232 N109434  10 TC=0,0 
+R_R81         N109214 N109078  1k TC=0,0 
+V_V26         N108448 0 DC 15V  
+V_V30         N108838 0 DC 300V AC 0 
+X_TX17    N109134 0 N108544 0 SCHEMATIC1_TX17 
+C_C63         0 N109166  47u  TC=0,0 
+R_R80         N108260 N108232  10k TC=0,0 
+X_Q23         0 N109078 N109128 awb2n3906 PARAMS:                              
++               
+R_R74         N108588 N108348  1k TC=0,0 
+C_C60         N108790 N108838  20u  TC=0,0 
+R_R78         N108790 N108838  150k TC=0,0 
+X_TX18    N108260 N108790 N108766 0 SCHEMATIC1_TX18 
+C_C62         N109214 N109078  22n  TC=0,0 
+D_D29         N108256 N1082441 D1N4740A 
+V_V29         N109214 0  
++PULSE 0V 15V 30usec 0 0 2usec 20usec
+D_D28         N108232 N1082201 D1N4740A 
+X_C57         N109128 N109134 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
++  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
+X_Q21         0 N108348 N108402 awb2n3906 PARAMS:                              
++               
+V_V27         N108588 0  
++PULSE 0V 15V 20usec 0 0 2usec 20usec
 
 .subckt SCHEMATIC1_TX6 1 2 3 4  
 K_TX6         L1_TX6 L2_TX6 1
-L1_TX6         1 2 1000uH
-L2_TX6         3 4 5000uH
+L1_TX6         1 2 600uH
+L2_TX6         3 4 15000uH
 .ends SCHEMATIC1_TX6
 
 .subckt SCHEMATIC1_TX5 1 2 3 4  
@@ -191,24 +179,6 @@ K_TX4         L1_TX4 L2_TX4 1
 L1_TX4         1 2 1000uH
 L2_TX4         3 4 5000uH
 .ends SCHEMATIC1_TX4
-
-.subckt SCHEMATIC1_TX11 1 2 3 4  
-K_TX11         L1_TX11 L2_TX11 1
-L1_TX11         1 2 1000uH
-L2_TX11         3 4 5000uH
-.ends SCHEMATIC1_TX11
-
-.subckt SCHEMATIC1_TX12 1 2 3 4  
-K_TX12         L1_TX12 L2_TX12 1
-L1_TX12         1 2 1000uH
-L2_TX12         3 4 5000uH
-.ends SCHEMATIC1_TX12
-
-.subckt SCHEMATIC1_TX10 1 2 3 4  
-K_TX10         L1_TX10 L2_TX10 1
-L1_TX10         1 2 1000uH
-L2_TX10         3 4 5000uH
-.ends SCHEMATIC1_TX10
 
 .subckt SCHEMATIC1_TX14 1 2 3 4  
 K_TX14         L1_TX14 L2_TX14 1
@@ -224,14 +194,32 @@ L2_TX13         3 4 5000uH
 
 .subckt SCHEMATIC1_TX15 1 2 3 4  
 K_TX15         L1_TX15 L2_TX15 1
-L1_TX15         1 2 1000uH
-L2_TX15         3 4 5000uH
+L1_TX15         1 2 600uH
+L2_TX15         3 4 15000uH
 .ends SCHEMATIC1_TX15
+
+.subckt SCHEMATIC1_TX16 1 2 3 4  
+K_TX16         L1_TX16 L2_TX16 1
+L1_TX16         1 2 1000uH
+L2_TX16         3 4 5000uH
+.ends SCHEMATIC1_TX16
+
+.subckt SCHEMATIC1_TX17 1 2 3 4  
+K_TX17         L1_TX17 L2_TX17 1
+L1_TX17         1 2 1000uH
+L2_TX17         3 4 5000uH
+.ends SCHEMATIC1_TX17
+
+.subckt SCHEMATIC1_TX18 1 2 3 4  
+K_TX18         L1_TX18 L2_TX18 1
+L1_TX18         1 2 1000uH
+L2_TX18         3 4 24000uH
+.ends SCHEMATIC1_TX18
 
 **** RESUMING Trans.cir ****
 .END
 
-**** 04/18/18 11:35:10 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/25/18 16:22:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -244,18 +232,18 @@ L2_TX15         3 4 5000uH
 
 
 
-               D1N4740A        D1N4744A        X_M3.MD         X_M3.MD1        
-          IS    9.499996E-06    4.997600E-24   10.000000E-18    0            
-           N    3.38339         1.6405           .70113        50            
-         ISR   10.010000E-21    2.247333E-06                                 
-          NR                    2.89714                                      
-          BV   10.055          15.048         500                            
-         IBV     .20695          .1296        250.000000E-06                 
-          RS     .143217         .21797         9.080380E-03                 
-          TT  605.620000E-09  605.000000E-09                                 
-         CJO  350.000000E-12  260.000000E-12    6.161040E-09    5.000000E-09 
-          VJ     .75             .46328         1.30742         1.83303      
-           M     .22336          .2466           .9              .9          
+               D1N4744A        D1N4740A        X_M3.MD         X_M3.MD1        
+          IS    4.997600E-24    9.499996E-06   10.000000E-18    0            
+           N    1.6405          3.38339          .70113        50            
+         ISR    2.247333E-06   10.010000E-21                                 
+          NR    2.89714                                                      
+          BV   15.048          10.055         500                            
+         IBV     .1296           .20695       250.000000E-06                 
+          RS     .21797          .143217        9.080380E-03                 
+          TT  605.000000E-09  605.620000E-09                                 
+         CJO  260.000000E-12  350.000000E-12    6.161040E-09    5.000000E-09 
+          VJ     .46328          .75            1.30742         1.83303      
+           M     .2466           .22336          .9              .9          
           FC                                                   10.000000E-09 
           EG                                    1.00085                      
          XTI                                    1.00002                      
@@ -275,35 +263,7 @@ L2_TX15         3 4 5000uH
          XTI                                    1.00002                      
 
 
-               X_M4.MD2        X_M4.MD3        X_M8.MD         X_M8.MD1        
-          IS  100.000000E-12  100.000000E-12   10.000000E-18    0            
-           N                                     .70113        50            
-          BV                                  500                            
-         IBV                                  250.000000E-06                 
-          RS    3.000000E-06                    9.080380E-03                 
-         CJO                                    6.161040E-09    5.000000E-09 
-          VJ                                    1.30742         1.83303      
-           M                                     .9              .9          
-          FC                                                   10.000000E-09 
-          EG                                    1.00085                      
-         XTI                                    1.00002                      
-
-
-               X_M8.MD2        X_M8.MD3        X_M7.MD         X_M7.MD1        
-          IS  100.000000E-12  100.000000E-12   10.000000E-18    0            
-           N                                     .70113        50            
-          BV                                  500                            
-         IBV                                  250.000000E-06                 
-          RS    3.000000E-06                    9.080380E-03                 
-         CJO                                    6.161040E-09    5.000000E-09 
-          VJ                                    1.30742         1.83303      
-           M                                     .9              .9          
-          FC                                                   10.000000E-09 
-          EG                                    1.00085                      
-         XTI                                    1.00002                      
-
-
-               X_M7.MD2        X_M7.MD3        X_M10.MD        X_M10.MD1       
+               X_M4.MD2        X_M4.MD3        X_M10.MD        X_M10.MD1       
           IS  100.000000E-12  100.000000E-12   10.000000E-18    0            
            N                                     .70113        50            
           BV                                  500                            
@@ -331,12 +291,40 @@ L2_TX15         3 4 5000uH
          XTI                                    1.00002                      
 
 
-               X_M9.MD2        X_M9.MD3        
+               X_M9.MD2        X_M9.MD3        X_M11.MD        X_M11.MD1       
+          IS  100.000000E-12  100.000000E-12   10.000000E-18    0            
+           N                                     .70113        50            
+          BV                                  500                            
+         IBV                                  250.000000E-06                 
+          RS    3.000000E-06                    9.080380E-03                 
+         CJO                                    6.161040E-09    5.000000E-09 
+          VJ                                    1.30742         1.83303      
+           M                                     .9              .9          
+          FC                                                   10.000000E-09 
+          EG                                    1.00085                      
+         XTI                                    1.00002                      
+
+
+               X_M11.MD2       X_M11.MD3       X_M12.MD        X_M12.MD1       
+          IS  100.000000E-12  100.000000E-12   10.000000E-18    0            
+           N                                     .70113        50            
+          BV                                  500                            
+         IBV                                  250.000000E-06                 
+          RS    3.000000E-06                    9.080380E-03                 
+         CJO                                    6.161040E-09    5.000000E-09 
+          VJ                                    1.30742         1.83303      
+           M                                     .9              .9          
+          FC                                                   10.000000E-09 
+          EG                                    1.00085                      
+         XTI                                    1.00002                      
+
+
+               X_M12.MD2       X_M12.MD3       
           IS  100.000000E-12  100.000000E-12 
           RS    3.000000E-06                 
 
 
-**** 04/18/18 11:35:10 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/25/18 16:22:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -396,53 +384,6 @@ L2_TX15         3 4 5000uH
            D     .52             .87             .52             .87         
 
 
-               X_Q13.model7    X_Q12.model4    X_Q14.model4    X_Q15.model7    
-               PNP             NPN             NPN             PNP             
-       LEVEL    1               1               1               1            
-          IS  218.880000E-15  172.800000E-18  172.800000E-18  218.880000E-15 
-          EG                    1.206           1.206                        
-          BF  200             254.395         254.395         200            
-          NF    1.221            .85             .85            1.221        
-         VAF   50              10              10              50            
-         IKF     .15             .016374         .016374         .15         
-         ISE    2.364000E-12    9.974460E-15    9.974460E-15    2.364000E-12 
-          NE    2.155           1.20863         1.20863         2.155        
-          BR    4.68             .1              .1             4.68         
-          NR    1.221            .891964         .891964        1.221        
-         VAR  500               7.74046         7.74046       500            
-         IKR                     .163741         .163741                     
-         ISC                    9.974460E-15    9.974460E-15                 
-          NC    1               2.84343         2.84343         1            
-         ISS    0               0               0               0            
-          RB   12              28.3394         28.3394         12            
-         RBM   12                .01             .01           12            
-         IRB                     .01             .01                         
-          RE     .1             1.339110E-03    1.339110E-03     .1          
-          RC    1.5             2.08353         2.08353         1.5          
-         CJE    6.250000E-12    4.566140E-12    4.566140E-12    6.250000E-12 
-         VJE     .916            .4              .4              .916        
-         MJE     .3898           .245712         .245712         .3898       
-         CJC    6.600000E-12    3.724850E-12    3.724850E-12    6.600000E-12 
-         VJC    1.67             .4              .4             1.67         
-         MJC     .4065           .236002         .236002         .4065       
-        XCJC     .5              .8              .8              .5          
-         CJS    0               0               0               0            
-         VJS     .7              .75             .75             .7          
-         MJS     .5              .5              .5              .5          
-          FC                     .519152         .519152                     
-          TF  361.720000E-12  481.412000E-12  481.412000E-12  361.720000E-12 
-         XTF   21                .9628           .9628         21            
-         VTF    4.7             9.52193         9.52193         4.7          
-         ITF     .26             .011333         .011333         .26         
-          TR   19.920000E-09    1.303990E-06    1.303990E-06   19.920000E-09 
-         XTB    1.7             1.20888         1.20888         1.7          
-         XTI                    1.34879         1.34879                      
-          KF    0               0               0               0            
-          AF    1               1               1               1            
-          CN    2.2             2.42            2.42            2.2          
-           D     .52             .87             .87             .52         
-
-
                X_Q18.model4    X_Q19.model7    X_Q16.model4    X_Q17.model7    
                NPN             PNP             NPN             PNP             
        LEVEL    1               1               1               1            
@@ -489,8 +430,55 @@ L2_TX15         3 4 5000uH
           CN    2.42            2.2             2.42            2.2          
            D     .87             .52             .87             .52         
 
+
+               X_Q20.model4    X_Q22.model4    X_Q23.model7    X_Q21.model7    
+               NPN             NPN             PNP             PNP             
+       LEVEL    1               1               1               1            
+          IS  172.800000E-18  172.800000E-18  218.880000E-15  218.880000E-15 
+          EG    1.206           1.206                                        
+          BF  254.395         254.395         200             200            
+          NF     .85             .85            1.221           1.221        
+         VAF   10              10              50              50            
+         IKF     .016374         .016374         .15             .15         
+         ISE    9.974460E-15    9.974460E-15    2.364000E-12    2.364000E-12 
+          NE    1.20863         1.20863         2.155           2.155        
+          BR     .1              .1             4.68            4.68         
+          NR     .891964         .891964        1.221           1.221        
+         VAR    7.74046         7.74046       500             500            
+         IKR     .163741         .163741                                     
+         ISC    9.974460E-15    9.974460E-15                                 
+          NC    2.84343         2.84343         1               1            
+         ISS    0               0               0               0            
+          RB   28.3394         28.3394         12              12            
+         RBM     .01             .01           12              12            
+         IRB     .01             .01                                         
+          RE    1.339110E-03    1.339110E-03     .1              .1          
+          RC    2.08353         2.08353         1.5             1.5          
+         CJE    4.566140E-12    4.566140E-12    6.250000E-12    6.250000E-12 
+         VJE     .4              .4              .916            .916        
+         MJE     .245712         .245712         .3898           .3898       
+         CJC    3.724850E-12    3.724850E-12    6.600000E-12    6.600000E-12 
+         VJC     .4              .4             1.67            1.67         
+         MJC     .236002         .236002         .4065           .4065       
+        XCJC     .8              .8              .5              .5          
+         CJS    0               0               0               0            
+         VJS     .75             .75             .7              .7          
+         MJS     .5              .5              .5              .5          
+          FC     .519152         .519152                                     
+          TF  481.412000E-12  481.412000E-12  361.720000E-12  361.720000E-12 
+         XTF     .9628           .9628         21              21            
+         VTF    9.52193         9.52193         4.7             4.7          
+         ITF     .011333         .011333         .26             .26         
+          TR    1.303990E-06    1.303990E-06   19.920000E-09   19.920000E-09 
+         XTB    1.20888         1.20888         1.7             1.7          
+         XTI    1.34879         1.34879                                      
+          KF    0               0               0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.42            2.2             2.2          
+           D     .87             .87             .52             .52         
+
 
-**** 04/18/18 11:35:10 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/25/18 16:22:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -503,7 +491,7 @@ L2_TX15         3 4 5000uH
 
 
 
-               X_M3.MM         X_M4.MM         X_M8.MM         X_M7.MM         
+               X_M3.MM         X_M4.MM         X_M10.MM        X_M9.MM         
                NMOS            NMOS            NMOS            NMOS            
        LEVEL    1               1               1               1            
            L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
@@ -535,7 +523,7 @@ L2_TX15         3 4 5000uH
        XPART    0               0               0               0            
 
 
-               X_M10.MM        X_M9.MM         
+               X_M11.MM        X_M12.MM        
                NMOS            NMOS            
        LEVEL    1               1            
            L  100.000000E-06  100.000000E-06 
@@ -566,8 +554,20 @@ L2_TX15         3 4 5000uH
          VDD    5               5            
        XPART    0               0            
 
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V7.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V9.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V22.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V24.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V29.
+
+WARNING(ORPSIM-15452): Pulse Period < (Rise Time + Fall Time + Pulse Width) for V_V27.
 
-**** 04/18/18 11:35:10 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 04/25/18 16:22:05 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
@@ -582,97 +582,95 @@ L2_TX15         3 4 5000uH
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N17266)  110.0000 (N17368) 150.0E-09 (N17406) 413.0E-12 (N17436)    0.0000     
+(N17266)  150.0000 (N17368) 173.1E-09 (N17406)     .1323 (N17436)    0.0000     
 
-(N17468)   15.0000 (N17568)-423.5E-24 (N17574) 3.296E-09 (N17606)    0.0000     
+(N17468)   15.0000 (N17568)    0.0000 (N17574) 4.494E-09 (N17606)    0.0000     
 
-(N17836)    0.0000 (N17842)    0.0000 (N17848)    0.0000 (N17866)  110.0000     
+(N17836)    0.0000 (N17866)  150.0000 (N17914)  300.0000 (N18076)  150.0000     
 
-(N17914)  220.0000 (N18076)  110.0000 (N18162) 150.0E-09 (N18220) 413.0E-12     
+(N18162) 150.0E-09 (N18220) 413.0E-12 (N18246)    0.0000 (N18278)   15.0000     
 
-(N18246)    0.0000 (N18278)   15.0000 (N18326)    0.0000 (N18546)  110.0000     
+(N18326)    0.0000 (N18546)  150.0000 (N89977)  110.0000 (N90065) 150.0E-09     
 
-(N73433) 413.0E-12 (N73437)  110.0000 (N73525) 150.0E-09 (N73579) 413.0E-12     
+(N90119) 413.0E-12 (N90133)    0.0000 (N90165)   15.0000 (N90261)    0.0000     
 
-(N73593)    0.0000 (N73625)   15.0000 (N73721)-423.5E-24 (N73727) 3.296E-09     
+(N90267) 3.296E-09 (N90303)    0.0000 (N90525)    0.0000 (N90555)  110.0000     
 
-(N73759)    0.0000 (N74001)    0.0000 (N74019)  110.0000 (N74067)  220.0000     
+(N90603)  220.0000 (N90757)  110.0000 (N90843) 150.0E-09 (N90893) 413.0E-12     
 
-(N74229)  110.0000 (N74315) 150.0E-09 (N74379)    0.0000 (N74411)   15.0000     
+(N90899)    0.0000 (N90931)   15.0000 (N90979)    0.0000 (N91199)  110.0000     
 
-(N74459)    0.0000 (N74679)  110.0000 (N82824)    0.0000 (N82857)    0.0000     
+(N91629)  220.0000 (N92147)  110.0000 (X_M3.4)    0.0000 (X_M3.5)  150.0000     
 
-(N84007)  220.0000 (N84294)  110.0000 (N89977)  110.0000 (N90065) 150.0E-09     
+(X_M3.6)  150.0000 (X_M3.7) 5.831E-09 (X_M3.8) 4.241E-12 (X_M3.9)  150.0000     
 
-(N90119) 413.0E-12 (N90133)    0.0000 (N90165)   15.0000 (N90261)-413.6E-27     
+(X_M4.4)    0.0000 (X_M4.5)  150.0000 (X_M4.6)  150.0000 (X_M4.7)  150.0000     
 
-(N90267) 3.296E-09 (N90303)    0.0000 (N90525)    0.0000 (N90531)    0.0000     
+(X_M4.8)  150.0000 (X_M4.9)  300.0000 (X_M9.4)    0.0000 (X_M9.5)  110.0000     
 
-(N90537)    0.0000 (N90555)  110.0000 (N90603)  220.0000 (N90757)  110.0000     
+(X_M9.6)  110.0000 (X_M9.7) 4.276E-09 (X_M9.8) 3.110E-12 (X_M9.9)  110.0000     
 
-(N90843) 150.0E-09 (N90893) 413.0E-12 (N90899)    0.0000 (N90931)   15.0000     
+(N108232)  150.0000                   (N108256) 4.494E-09                       
 
-(N90979)    0.0000 (N91199)  110.0000 (N91629)  220.0000 (N92147)  110.0000     
+(N108260)  150.0000                   (N108348) 173.1E-09                       
 
-(X_M3.4)    0.0000 (X_M3.5)  110.0000 (X_M3.6)  110.0000 (X_M3.7) 4.276E-09     
+(N108402)     .1323                   (N108416)    0.0000                       
 
-(X_M3.8) 3.110E-12 (X_M3.9)  110.0000 (X_M4.4)    0.0000 (X_M4.5)  110.0000     
+(N108448)   15.0000                   (N108544)-480.6E-24                       
 
-(X_M4.6)  110.0000 (X_M4.7)  110.0000 (X_M4.8)  110.0000 (X_M4.9)  220.0000     
+(N108588)    0.0000                   (N108766)    0.0000                       
 
-(X_M7.4)    0.0000 (X_M7.5)  110.0000 (X_M7.6)  110.0000 (X_M7.7) 4.276E-09     
+(N108790)  150.0000                   (N108838)  300.0000                       
 
-(X_M7.8) 3.110E-12 (X_M7.9)  110.0000 (X_M8.4)    0.0000 (X_M8.5)  110.0000     
+(N109078) 150.0E-09                   (N109128) 413.0E-12                       
 
-(X_M8.6)  110.0000 (X_M8.7)  110.0000 (X_M8.8)  110.0000 (X_M8.9)  220.0000     
+(N109134)    0.0000                   (N109166)   15.0000                       
 
-(X_M9.4)    0.0000 (X_M9.5)  110.0000 (X_M9.6)  110.0000 (X_M9.7) 4.276E-09     
+(N109214)    0.0000                   (N109434)  150.0000                       
 
-(X_M9.8) 3.110E-12 (X_M9.9)  110.0000 (N747891)  110.0000                       
+(N851801)  150.0000                   (N852271) 3.521E-09                       
 
-(N748391) 2.582E-09                   (N851801)  110.0000                       
+(N913111)  110.0000                   (N913351) 2.582E-09                       
 
-(N852271) 2.582E-09                   (N913111)  110.0000                       
+(X_M10.4)    0.0000                   (X_M10.5)  110.0000                       
 
-(N913351) 2.582E-09                   (X_M10.4)    0.0000                       
+(X_M10.6)  110.0000                   (X_M10.7)  110.0000                       
 
-(X_M10.5)  110.0000                   (X_M10.6)  110.0000                       
+(X_M10.8)  110.0000                   (X_M10.9)  220.0000                       
 
-(X_M10.7)  110.0000                   (X_M10.8)  110.0000                       
+(X_M11.4)    0.0000                   (X_M11.5)  150.0000                       
 
-(X_M10.9)  220.0000                   (X_M3.10)  110.0000                       
+(X_M11.6)  150.0000                   (X_M11.7) 5.831E-09                       
 
-(X_M3.11)  110.0000                   (X_M4.10)  110.0000                       
+(X_M11.8) 4.241E-12                   (X_M11.9)  150.0000                       
 
-(X_M4.11)  110.0000                   (X_M7.10)  110.0000                       
+(X_M12.4)    0.0000                   (X_M12.5)  150.0000                       
 
-(X_M7.11)  110.0000                   (X_M8.10)  110.0000                       
+(X_M12.6)  150.0000                   (X_M12.7)  150.0000                       
 
-(X_M8.11)  110.0000                   (X_M9.10)  110.0000                       
+(X_M12.8)  150.0000                   (X_M12.9)  300.0000                       
 
-(X_M9.11)  110.0000                   (X_M10.10)  110.0000                      
+(X_M3.10)  150.0000                   (X_M3.11)  150.0000                       
 
-(X_M10.11)  110.0000                  (X_C21.xinstcapacitor.3) 412.5E-12        
+(X_M4.10)  150.0000                   (X_M4.11)  150.0000                       
 
-(X_C21.xinstcapacitor.4) 412.5E-12    (X_C22.xinstcapacitor.3) 412.5E-12        
+(X_M9.10)  110.0000                   (X_M9.11)  110.0000                       
 
-(X_C22.xinstcapacitor.4) 412.5E-12    (X_C32.xinstcapacitor.3) 412.5E-12        
+(N1082201)  150.0000                  (N1082441) 3.521E-09                      
 
-(X_C32.xinstcapacitor.4) 412.5E-12    (X_C33.xinstcapacitor.3) 412.5E-12        
+(X_M10.10)  110.0000                  (X_M10.11)  110.0000                      
 
-(X_C33.xinstcapacitor.4) 412.5E-12    (X_C46.xinstcapacitor.3) 412.5E-12        
+(X_M11.10)  150.0000                  (X_M11.11)  150.0000                      
 
-(X_C46.xinstcapacitor.4) 412.5E-12    (X_C47.xinstcapacitor.3) 412.5E-12        
+(X_M12.10)  150.0000                  (X_M12.11)  150.0000                      
 
-(X_C47.xinstcapacitor.4) 412.5E-12                                              
+(X_C22.xinstcapacitor.3) 412.5E-12    (X_C22.xinstcapacitor.4) 412.5E-12        
 
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
+(X_C46.xinstcapacitor.3) 412.5E-12    (X_C46.xinstcapacitor.4) 412.5E-12        
 
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
+(X_C47.xinstcapacitor.3) 412.5E-12    (X_C47.xinstcapacitor.4) 412.5E-12        
 
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
-
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
+(X_C57.xinstcapacitor.3) 412.5E-12    (X_C57.xinstcapacitor.4) 412.5E-12        
 
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
 
@@ -681,22 +679,6 @@ L2_TX15         3 4 5000uH
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
 
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
 
 (X_C46.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
 
@@ -712,7 +694,15 @@ L2_TX15         3 4 5000uH
 
 (X_C47.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
 
-(X_C47.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000        
+(X_C47.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000        
 
 
 
@@ -720,123 +710,119 @@ L2_TX15         3 4 5000uH
     VOLTAGE SOURCE CURRENTS
     NAME         CURRENT
 
-    V_V7         1.500E-10
+    V_V7         1.731E-10
     V_V9         1.500E-10
-    V_V6        -1.875E-10
+    V_V6        -1.874E-10
     V_V8        -1.875E-10
-    V_V10       -7.388E-04
-    V_V16       -1.875E-10
-    V_V17        1.500E-10
-    V_V19        1.500E-10
-    V_V20       -7.388E-04
-    V_V18       -1.875E-10
+    V_V10       -1.008E-03
     V_V22        1.500E-10
     V_V24        1.500E-10
     V_V21       -1.875E-10
     V_V25       -7.388E-04
     V_V23       -1.875E-10
-    X_M3.VFI2    1.100E-10
+    V_V28       -1.875E-10
+    V_V26       -1.874E-10
+    V_V30       -1.008E-03
+    V_V29        1.500E-10
+    V_V27        1.731E-10
+    X_M3.VFI2    1.500E-10
     X_M3.VFI1    0.000E+00
-    X_M4.VFI2    1.100E-10
+    X_M4.VFI2    1.500E-10
     X_M4.VFI1    0.000E+00
-    X_M8.VFI2    1.100E-10
-    X_M8.VFI1    0.000E+00
-    X_M7.VFI2    1.100E-10
-    X_M7.VFI1    0.000E+00
     X_M10.VFI2   1.100E-10
     X_M10.VFI1   0.000E+00
     X_M9.VFI2    1.100E-10
     X_M9.VFI1    0.000E+00
+    X_M11.VFI2   1.500E-10
+    X_M11.VFI1   0.000E+00
+    X_M12.VFI2   1.500E-10
+    X_M12.VFI1   0.000E+00
 
-    TOTAL POWER DISSIPATION   4.88E-01  WATTS
+    TOTAL POWER DISSIPATION   7.67E-01  WATTS
 
 Reducing minimum delta to make the circuit converge.
 Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
 
-ERROR(ORPSIM-15138): Convergence problem in transient analysis at Time =  16.00E-09.
-         Time step =  232.8E-21, minimum allowable step size =  1.000E-18
+ERROR(ORPSIM-15138): Convergence problem in transient analysis at Time =  180.0E-06.
+         Time step =  123.5E-21, minimum allowable step size =  1.000E-18
 
   These voltages failed to converge:
 
-    V(N73727)                 =    8.572uV  \    3.327nV
-    V(N73721)                 =    7.820uV  \    31.35pV
-    V(N748391)                =    5.173uV  \    2.601nV
-    V(N82857)                 =    1.732mV  \    2.639nV
-    V(N82824)                 =    1.732mV  \    2.639nV
-    V(N74001)                 =    1.732mV  \    2.639nV
-    V(N90267)                 =    7.905uV  \    3.311nV
-    V(N913351)                =    4.771uV  \    2.591nV
-    V(N90525)                 =    1.597mV  \    1.268nV
-    V(N90531)                 =    1.597mV  \    1.268nV
-    V(N90537)                 =    1.597mV  \    1.268nV
-    V(N90261)                 =    7.212uV  \    15.06pV
-    V(N74379)                 =    3.514uV  \    14.02pV
-    V(X_M7.7)                 =    79.23uV  \    4.308nV
-    V(X_M7.8)                 =    79.23uV  \    3.349pV
-    V(N73593)                 =   -3.480uV  \   -13.80pV
-    V(N90899)                 =    3.241uV  \    6.734pV
-    V(N90133)                 =   -3.434uV  \   -6.016pV
-    V(X_M9.7)                 =    73.07uV  \    4.291nV
-    V(X_M9.8)                 =    73.07uV  \    3.225pV
-    V(X_C33.xinstcapacitor.4) =    1.674uV  \   426.42pV
-    V(X_C32.xinstcapacitor.4) =   -1.657uV  \   398.80pV
-    V(X_C46.xinstcapacitor.4) =   -1.635uV  \   406.53pV
-    V(X_C47.xinstcapacitor.4) =    1.544uV  \   419.19pV
+    V(N17568)                 =     9.462V  \     9.448V
+    V(N17836)                 =   -711.24V  \   -721.10V
+    V(N18546)                 =    -6.573V  \    -6.363V
+    V(N90525)                 =   -533.80V  \   -536.78V
+    V(N90261)                 =      9.57V  \      9.56V
+    V(N1082201)               =     4.181V  \     4.175V
+    V(N108766)                =   -713.75V  \   -707.63V
+    V(N108544)                =     9.499V  \     9.473V
+    V(N108232)                =    -5.861V  \    -5.870V
+    V(N109434)                =    -6.538V  \    -6.679V
+    V(N18246)                 =     4.164V  \     4.225V
+    V(X_M4.7)                 =    -5.529V  \    -5.552V
+    V(X_M4.8)                 =     5.332V  \     5.309V
+    V(N90899)                 =     4.212V  \     4.275V
+    V(X_M12.7)                =    -5.848V  \    -5.869V
+    V(X_M12.8)                =     5.013V  \     4.992V
+    V(N109134)                =     4.120V  \     4.236V
+    V(X_C22.xinstcapacitor.4) =     8.168V  \     8.197V
+    V(X_C46.xinstcapacitor.4) =    -2.045V  \    -2.043V
+    V(X_C47.xinstcapacitor.4) =     8.192V  \     8.222V
+    V(X_C57.xinstcapacitor.4) =     8.146V  \     8.202V
 
   These supply currents failed to converge:
 
-    I(X_M3.EV16)              =         0A  \  -530.75pA
-    I(X_M4.EV16)              =         0A  \  -529.27pA
-    I(X_M8.EV16)              =         0A  \  -521.20pA
-    I(X_M7.EV16)              =   -61.04uA  \  -538.82pA
-    I(X_M10.EV16)             =         0A  \  -525.80pA
-    I(X_M9.EV16)              =   -61.04uA  \  -534.21pA
-    I(X_TX6.L1_TX6)           =    50.00pA  \   -2.914pA
-    I(X_TX6.L2_TX6)           =   -23.69pA  \   -21.89fA
-    I(X_TX5.L1_TX5)           =    17.76pA  \    37.50pA
-    I(X_TX5.L2_TX5)           =   338.42pA  \   329.59pA
-    I(X_TX4.L1_TX4)           =    11.55nA  \    37.50pA
-    I(X_TX4.L2_TX4)           =   -4.821nA  \   329.58pA
-    I(X_TX11.L1_TX11)         =  -167.29nA  \    37.49pA
-    I(X_TX11.L2_TX11)         =    75.16nA  \   329.60pA
-    I(X_TX12.L1_TX12)         =   387.22nA  \   -2.167pA
-    I(X_TX12.L2_TX12)         =  -173.17nA  \  -263.89fA
-    I(X_TX10.L1_TX10)         =   165.73nA  \    37.51pA
-    I(X_TX10.L2_TX10)         =   -73.77nA  \   329.57pA
-    I(X_TX14.L1_TX14)         =  -154.27nA  \    37.50pA
-    I(X_TX14.L2_TX14)         =    69.34nA  \   329.60pA
-    I(X_TX13.L1_TX13)         =   163.54nA  \    37.50pA
-    I(X_TX13.L2_TX13)         =   -72.79nA  \   329.44pA
-    I(X_TX15.L1_TX15)         =   357.11nA  \   -2.800pA
-    I(X_TX15.L2_TX15)         =  -159.70nA  \  -126.75fA
-    I(V_V7)                   =   -10.98nA  \   150.01pA
-    I(V_V9)                   =    15.69pA  \   150.01pA
-    I(V_V6)                   =    11.82mA  \  -187.51pA
-    I(V_V8)                   =    11.82mA  \  -187.51pA
-    I(V_V10)                  =    6.669mA  \  -738.83uA
-    I(V_V16)                  =    11.82mA  \  -187.51pA
-    I(V_V17)                  =  -166.49nA  \   150.00pA
-    I(V_V19)                  =   168.05nA  \   150.02pA
-    I(V_V20)                  =     1.166A  \  -738.83uA
-    I(V_V18)                  =    11.82mA  \  -187.51pA
-    I(V_V22)                  =  -161.65nA  \   150.01pA
-    I(V_V24)                  =   153.51nA  \   150.02pA
-    I(V_V21)                  =    11.82mA  \  -187.51pA
-    I(V_V25)                  =    78.13mA  \  -738.83uA
-    I(V_V23)                  =    11.82mA  \  -187.51pA
-    I(X_M3.VFI2)              =  -927.95nA  \   110.73pA
-    I(X_M4.VFI2)              =  -491.41nA  \   109.27pA
-    I(X_M8.VFI2)              =   -4.807uA  \   101.21pA
-    I(X_M7.VFI2)              =    4.340uA  \   118.78pA
-    I(X_M10.VFI2)             =   -5.328uA  \   105.77pA
-    I(X_M9.VFI2)              =    4.860uA  \   114.22pA
+    I(X_M4.EV16)              =   212.89mA  \    3.382mA
+    I(X_M10.EV16)             =   -27.83mA  \  -538.39uA
+    I(X_M12.EV16)             =   175.78mA  \    2.791mA
+    I(X_TX6.L1_TX6)           =    -18.72A  \    -18.96A
+    I(X_TX6.L2_TX6)           =     3.556A  \     3.606A
+    I(X_TX5.L1_TX5)           =   364.00mA  \   361.07mA
+    I(X_TX5.L2_TX5)           =   -34.01mA  \   -32.70mA
+    I(X_TX4.L1_TX4)           =    73.66mA  \   120.14mA
+    I(X_TX4.L2_TX4)           =   101.75mA  \    80.96mA
+    I(X_TX14.L1_TX14)         =   361.82mA  \   358.82mA
+    I(X_TX14.L2_TX14)         =   -32.93mA  \   -31.59mA
+    I(X_TX13.L2_TX13)         =    18.27mA  \    18.37mA
+    I(X_TX15.L1_TX15)         =    -13.28A  \    -13.35A
+    I(X_TX15.L2_TX15)         =     2.669A  \     2.684A
+    I(X_TX16.L1_TX16)         =   149.65mA  \   120.15mA
+    I(X_TX16.L2_TX16)         =    67.75mA  \    80.94mA
+    I(X_TX17.L1_TX17)         =   366.05mA  \   360.49mA
+    I(X_TX17.L2_TX17)         =   -34.95mA  \   -32.46mA
+    I(X_TX18.L1_TX18)         =    -17.99A  \    -17.84A
+    I(X_TX18.L2_TX18)         =     3.569A  \     3.538A
+    I(V_V7)                   =    63.36mA  \    26.56mA
+    I(V_V9)                   =   -22.22mA  \   -19.33mA
+    I(V_V6)                   =    74.32mA  \   776.05nA
+    I(V_V8)                   =  -267.42mA  \  -341.74mA
+    I(V_V10)                  =     -9.50A  \    -9.488A
+    I(V_V22)                  =    26.29mA  \    26.51mA
+    I(V_V24)                  =   -22.06mA  \   -19.11mA
+    I(V_V21)                  =   -54.03mA  \  -128.34mA
+    I(V_V25)                  =    -8.813A  \    -8.877A
+    I(V_V23)                  =  -265.43mA  \  -339.74mA
+    I(V_V28)                  =  -266.91mA  \  -341.22mA
+    I(V_V26)                  =    74.32mA  \   823.58nA
+    I(V_V30)                  =    -8.500A  \    -8.924A
+    I(V_V29)                  =   -24.81mA  \   -19.27mA
+    I(V_V27)                  =   -4.051mA  \    26.57mA
+    I(X_M3.VFI2)              =   -64.07uA  \   -75.90uA
+    I(X_M3.VFI1)              =   -13.65mA  \   -17.09mA
+    I(X_M4.VFI2)              =  -212.81mA  \   -3.382mA
+    I(X_M10.VFI2)             =    27.79mA  \   538.39uA
+    I(X_M9.VFI2)              =   -69.83uA  \   -71.34uA
+    I(X_M9.VFI1)              =   -15.96mA  \   -16.62mA
+    I(X_M11.VFI2)             =   -60.97uA  \   -74.66uA
+    I(X_M11.VFI1)             =   -12.79mA  \   -16.96mA
+    I(X_M12.VFI2)             =  -175.55mA  \   -2.791mA
 
   These devices failed to converge:
-    D_D18     D_D19     D_D20     D_D21     X_M3.D1   X_M3.D2   X_M4.D1   
-    X_M4.D2   X_M8.D2   X_M7.D2   X_M10.D2  X_M9.D2   X_Q6.Q2n3906_0 
-    X_Q7.Q2n3904_0 X_Q8.Q2n3906_0 X_Q5.Q2n3904_0 X_Q13.Q2n3906_0 
-    X_Q12.Q2n3904_0 X_Q14.Q2n3904_0 X_Q15.Q2n3906_0 X_Q18.Q2n3904_0 
-    X_Q19.Q2n3906_0 X_Q16.Q2n3904_0 X_Q17.Q2n3906_0 
+    X_M3.D2   X_M9.D2   X_Q6.Q2n3906_0 X_Q8.Q2n3906_0 X_Q5.Q2n3904_0 
+    X_Q19.Q2n3906_0 X_Q16.Q2n3904_0 X_Q17.Q2n3906_0 X_Q20.Q2n3904_0 
+    X_Q23.Q2n3906_0 X_Q21.Q2n3906_0 
 
 
 
@@ -845,97 +831,95 @@ ERROR(ORPSIM-15138): Convergence problem in transient analysis at Time =  16.00E
  NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
 
 
-(N17266)  110.0000 (N17368) 150.0E-09 (N17406) 397.8E-12 (N17436)-241.9E-09     
+(N17266)    5.3104 (N17368)   -1.3929 (N17406)   -1.1219 (N17436)   -5.2193     
 
-(N17468)   15.0000 (N17568) 1.065E-09 (N17574) 4.449E-09 (N17606)    0.0000     
+(N17468)   15.0000 (N17568)    9.4617 (N17574)    9.1217 (N17606)    3.0000     
 
-(N17836) 236.9E-09 (N17842) 236.9E-09 (N17848) 236.9E-09 (N17866)  110.0000     
+(N17836) -711.2400 (N17866)  149.5300 (N17914)  300.0000 (N18076)   -5.5554     
 
-(N17914)  220.0000 (N18076)  110.0000 (N18162) 150.0E-09 (N18220) 412.8E-12     
+(N18162)    9.7968 (N18220)    8.7448 (N18246)    4.1640 (N18278)   15.0000     
 
-(N18246) 414.5E-12 (N18278)   15.0000 (N18326)    0.0000 (N18546)  110.0000     
+(N18326)   15.0000 (N18546)   -6.5728 (N89977)    4.3459 (N90065)   -1.4184     
 
-(N73433) 640.2E-12 (N73437)  110.0000 (N73525) 150.0E-09 (N73579) 187.9E-12     
+(N90119)   -2.2102 (N90133)   -4.8564 (N90165)   15.0000 (N90261)    9.5728     
 
-(N73593)-3.480E-06 (N73625)   15.0000 (N73721) 7.820E-06 (N73727) 8.572E-06     
+(N90267)    9.2435 (N90303)    3.0000 (N90525) -533.8000 (N90555)  111.7000     
 
-(N73759)    0.0000 (N74001)     .0017 (N74019)  110.0000 (N74067)  220.0000     
+(N90603)  220.0000 (N90757)   -6.3190 (N90843)    9.7946 (N90893)    8.7446     
 
-(N74229)  110.0000 (N74315) 150.0E-09 (N74379) 3.514E-06 (N74411)   15.0000     
+(N90899)    4.2121 (N90931)   15.0000 (N90979)   15.0000 (N91199)   -6.5017     
 
-(N74459)    0.0000 (N74679)  110.0000 (N82824)     .0017 (N82857)     .0017     
+(N91629)  110.3600 (N92147)  110.9500 (X_M3.4)    0.0000 (X_M3.5)    -.6484     
 
-(N84007)  220.0000 (N84294)  110.0000 (N89977)  110.0000 (N90065) 150.0E-09     
+(X_M3.6)    -.6484 (X_M3.7)    9.0279 (X_M3.8)     .5372 (X_M3.9)     .6794     
 
-(N90119) 182.2E-12 (N90133)-3.434E-06 (N90165)   15.0000 (N90261) 7.212E-06     
+(X_M4.4)    0.0000 (X_M4.5)  305.5500 (X_M4.6)  305.3400 (X_M4.7)   -5.5285     
 
-(N90267) 7.905E-06 (N90303)    0.0000 (N90525)     .0016 (N90531)     .0016     
+(X_M4.8)    5.3320 (X_M4.9)  299.8100 (X_M9.4)    0.0000 (X_M9.5)    -.6492     
 
-(N90537)     .0016 (N90555)  110.0000 (N90603)  220.0000 (N90757)  110.0000     
+(X_M9.6)    -.6492 (X_M9.7)    9.1527 (X_M9.8)     .4403 (X_M9.9)     .5512     
 
-(N90843) 150.0E-09 (N90893) 631.9E-12 (N90899) 3.241E-06 (N90931)   15.0000     
+(N108232)   -5.8607                   (N108256)    9.1491                       
 
-(N90979)    0.0000 (N91199)  110.0000 (N91629)  220.0000 (N92147)  110.0000     
+(N108260)    4.9947                   (N108348)   -1.3929                       
 
-(X_M3.4)    0.0000 (X_M3.5)  110.0000 (X_M3.6)  110.0000 (X_M3.7) 14.94E-09     
+(N108402)   -1.1223                   (N108416)   -5.2193                       
 
-(X_M3.8) 10.66E-09 (X_M3.9)  110.0000 (X_M4.4)    0.0000 (X_M4.5)  110.0000     
+(N108448)   15.0000                   (N108544)    9.4986                       
 
-(X_M4.6)  110.0000 (X_M4.7)  110.0000 (X_M4.8)  110.0000 (X_M4.9)  220.0000     
+(N108588)    3.0000                   (N108766) -713.7500                       
 
-(X_M7.4)    0.0000 (X_M7.5)  110.0000 (X_M7.6)  110.0000 (X_M7.7) 79.23E-06     
+(N108790)  149.4400                   (N108838)  300.0000                       
 
-(X_M7.8) 79.23E-06 (X_M7.9)  110.0000 (X_M8.4)    0.0000 (X_M8.5)  110.0000     
+(N109078)    9.7948                   (N109128)    8.7433                       
 
-(X_M8.6)  110.0000 (X_M8.7)  110.0000 (X_M8.8)  110.0000 (X_M8.9)  220.0000     
+(N109134)    4.1197                   (N109166)   15.0000                       
 
-(X_M9.4)    0.0000 (X_M9.5)  110.0000 (X_M9.6)  110.0000 (X_M9.7) 73.07E-06     
+(N109214)   15.0000                   (N109434)   -6.5382                       
 
-(X_M9.8) 73.07E-06 (X_M9.9)  110.0000 (N747891)  110.0000                       
+(N851801)    4.4910                   (N852271)   10.5950                       
 
-(N748391) 5.173E-06                   (N851801)  110.0000                       
+(N913111)    3.6700                   (N913351)   10.6810                       
 
-(N852271) 3.278E-09                   (N913111)  110.0000                       
+(X_M10.4)    0.0000                   (X_M10.5)  226.3300                       
 
-(N913351) 4.771E-06                   (X_M10.4)    0.0000                       
+(X_M10.6)  226.3500                   (X_M10.7)   -6.3295                       
 
-(X_M10.5)  110.0000                   (X_M10.6)  110.0000                       
+(X_M10.8)    4.3432                   (X_M10.9)  220.0200                       
 
-(X_M10.7)  110.0000                   (X_M10.8)  110.0000                       
+(X_M11.4)    0.0000                   (X_M11.5)    -.6486                       
 
-(X_M10.9)  220.0000                   (X_M3.10)  110.0000                       
+(X_M11.6)    -.6486                   (X_M11.7)    9.0558                       
 
-(X_M3.11)  110.0000                   (X_M4.10)  110.0000                       
+(X_M11.8)     .5055                   (X_M11.9)     .6374                       
 
-(X_M4.11)  110.0000                   (X_M7.10)  110.0000                       
+(X_M12.4)    0.0000                   (X_M12.5)  305.8700                       
 
-(X_M7.11)  110.0000                   (X_M8.10)  110.0000                       
+(X_M12.6)  305.6900                   (X_M12.7)   -5.8480                       
 
-(X_M8.11)  110.0000                   (X_M9.10)  110.0000                       
+(X_M12.8)    5.0125                   (X_M12.9)  299.8500                       
 
-(X_M9.11)  110.0000                   (X_M10.10)  110.0000                      
+(X_M3.10)   -8.3485                   (X_M3.11)    -.6484                       
 
-(X_M10.11)  110.0000                  (X_C21.xinstcapacitor.3) 397.1E-12        
+(X_M4.10)  305.3400                   (X_M4.11)  305.3400                       
 
-(X_C21.xinstcapacitor.4)-114.8E-09    (X_C22.xinstcapacitor.3) 412.4E-12        
+(X_M9.10)   -8.6015                   (X_M9.11)    -.6492                       
 
-(X_C22.xinstcapacitor.4) 609.8E-12    (X_C32.xinstcapacitor.3) 184.4E-12        
+(N1082201)    4.1814                  (N1082441)   10.6140                      
 
-(X_C32.xinstcapacitor.4)-1.657E-06    (X_C33.xinstcapacitor.3) 642.9E-12        
+(X_M10.10)  226.3500                  (X_M10.11)  226.3500                      
 
-(X_C33.xinstcapacitor.4) 1.674E-06    (X_C46.xinstcapacitor.3) 178.7E-12        
+(X_M11.10)   -8.4184                  (X_M11.11)    -.6486                      
 
-(X_C46.xinstcapacitor.4)-1.635E-06    (X_C47.xinstcapacitor.3) 634.3E-12        
+(X_M12.10)  305.6900                  (X_M12.11)  305.6900                      
 
-(X_C47.xinstcapacitor.4) 1.544E-06                                              
+(X_C22.xinstcapacitor.3)    8.7405    (X_C22.xinstcapacitor.4)    8.1679        
 
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
+(X_C46.xinstcapacitor.3)   -2.2133    (X_C46.xinstcapacitor.4)   -2.0453        
 
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
+(X_C47.xinstcapacitor.3)    8.7403    (X_C47.xinstcapacitor.4)    8.1920        
 
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
-
-(X_C21.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
+(X_C57.xinstcapacitor.3)    8.7389    (X_C57.xinstcapacitor.4)    8.1462        
 
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
 
@@ -944,22 +928,6 @@ ERROR(ORPSIM-15138): Convergence problem in transient analysis at Time =  16.00E
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
 
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
-
-(X_C32.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
-
-(X_C33.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
 
 (X_C46.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
 
@@ -975,7 +943,15 @@ ERROR(ORPSIM-15138): Convergence problem in transient analysis at Time =  16.00E
 
 (X_C47.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
 
-(X_C47.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000        
+(X_C47.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY2)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY3)    1.0000                               
+
+(X_C57.xinstcapacitor.AWBDISCAP_DUMMY4)    1.0000        
 
 
 **** Interrupt ****
