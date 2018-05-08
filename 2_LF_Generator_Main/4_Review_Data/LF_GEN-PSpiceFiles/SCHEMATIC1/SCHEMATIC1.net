@@ -181,12 +181,12 @@ L2_TX21         3 4 15000uH
 
 .subckt SCHEMATIC1_TX20 1 2 3 4  
 K_TX20         L1_TX20 L2_TX20 1
-L1_TX20         1 2 1000uH
-L2_TX20         3 4 5000uH
+L1_TX20         1 2 5000uH
+L2_TX20         3 4 10000uH
 .ends SCHEMATIC1_TX20
 
 .subckt SCHEMATIC1_TX19 1 2 3 4  
 K_TX19         L1_TX19 L2_TX19 1
-L1_TX19         1 2 1000uH
-L2_TX19         3 4 5000uH
+L1_TX19         1 2 5000uH
+L2_TX19         3 4 10000uH
 .ends SCHEMATIC1_TX19

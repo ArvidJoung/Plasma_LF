@@ -1,7 +1,7 @@
 
-**** 04/25/18 21:55:53 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/08/18 16:56:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     CIRCUIT DESCRIPTION
@@ -213,22 +213,22 @@ L2_TX21         3 4 15000uH
 
 .subckt SCHEMATIC1_TX20 1 2 3 4  
 K_TX20         L1_TX20 L2_TX20 1
-L1_TX20         1 2 1000uH
-L2_TX20         3 4 5000uH
+L1_TX20         1 2 5000uH
+L2_TX20         3 4 10000uH
 .ends SCHEMATIC1_TX20
 
 .subckt SCHEMATIC1_TX19 1 2 3 4  
 K_TX19         L1_TX19 L2_TX19 1
-L1_TX19         1 2 1000uH
-L2_TX19         3 4 5000uH
+L1_TX19         1 2 5000uH
+L2_TX19         3 4 10000uH
 .ends SCHEMATIC1_TX19
 
 **** RESUMING Trans.cir ****
 .END
 
-**** 04/25/18 21:55:53 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/08/18 16:56:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     Diode MODEL PARAMETERS
@@ -331,9 +331,9 @@ L2_TX19         3 4 5000uH
           RS    3.000000E-06                 
 
 
-**** 04/25/18 21:55:53 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/08/18 16:56:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     BJT MODEL PARAMETERS
@@ -485,9 +485,9 @@ L2_TX19         3 4 5000uH
            D     .87             .52             .87             .52         
 
 
-**** 04/25/18 21:55:53 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/08/18 16:56:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -562,9 +562,9 @@ L2_TX19         3 4 5000uH
        XPART    0               0            
 
 
-**** 04/25/18 21:55:53 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/08/18 16:56:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -775,9 +775,9 @@ L2_TX19         3 4 5000uH
 
           JOB CONCLUDED
 
-**** 04/25/18 21:55:53 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/08/18 16:56:06 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
+ ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
 
 
  ****     JOB STATISTICS SUMMARY
@@ -787,5 +787,5 @@ L2_TX19         3 4 5000uH
 
 
 
-  Total job time (using Solver 1)   =         .64
+  Total job time (using Solver 1)   =        1.11
 
