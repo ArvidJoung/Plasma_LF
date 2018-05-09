@@ -46,8 +46,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 2 3 -1 -1 -8 -30 50 1733 50 569")
-        (Scroll "-241 0")
-        (Zoom "100")
+        (Scroll "-3 132")
+        (Zoom "134")
         (Occurrence "/"))
       (Path
          "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
@@ -68,8 +68,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 100 1783 100 619")
-        (Scroll "-121 0")
-        (Zoom "100")
+        (Scroll "60 218")
+        (Zoom "200")
         (Occurrence "/"))
       (Path
          "D:\MY_WORK\20171211_FEMTO_LF GEN\0_GITHUB_DATA_LF\2_LF_GENERATOR_MAIN\4_REVIEW_DATA\LF_GEN.DSN")
