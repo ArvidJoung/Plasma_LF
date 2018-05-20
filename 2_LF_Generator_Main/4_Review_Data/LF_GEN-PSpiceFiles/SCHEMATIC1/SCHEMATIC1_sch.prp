@@ -2441,7 +2441,7 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"15V")
+                    ("value"	"12V")
                     ("pspice_param"	"DC")
                 )
             )
@@ -2583,7 +2583,7 @@
             ("level"	"0")
             ("model_params"
                 ("DC"
-                    ("value"	"15V")
+                    ("value"	"12V")
                     ("pspice_param"	"DC")
                 )
             )

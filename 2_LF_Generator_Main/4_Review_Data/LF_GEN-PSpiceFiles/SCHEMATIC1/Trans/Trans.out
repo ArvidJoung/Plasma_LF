@@ -1,7 +1,7 @@
 
-**** 05/09/18 11:10:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
+ ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
 
  ****     CIRCUIT DESCRIPTION
@@ -131,7 +131,7 @@ X_TX22    N131485 0 N132503 N131329 SCHEMATIC1_TX22
 C_C86         N131329 N132701  1n  TC=0,0 
 X_C88         N131471 N131485 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 +  ESL=100U RESL=10 ESR=11 RP=12M TC=100 TC1_ESR=10 TC2_ESR=10
-V_V36         N131517 0 DC 15V  
+V_V36         N131517 0 DC 12V  
 R_R97         0 N131325  10k TC=0,0 
 R_R105         N132701 N131907  10 TC=0,0 
 X_Q31         0 N132147 N132197 awb2n3906 PARAMS:                              
@@ -141,13 +141,13 @@ X_C79         N132197 N132203 awbcapacitor PARAMS: CAP=10U C1=10N C2=2 C3=111
 D_D37         N131325 N1313131 D1N4740A 
 X_TX23    N132203 0 N131613 0 SCHEMATIC1_TX23 
 V_V37         N131657 0  
-+PULSE 0V 15V 20usec 0 0 2usec 20usec
++PULSE 0V 12V 20usec 0 0 2usec 20usec
 X_M16         N131907 N131301 N131329 IRFP460
 C_C87         0 N132739  1n  TC=0,0 
 X_Q28         N131517 N131417 N131471 awb2n3904 PARAMS:                        
 +                     
 D_D39         0 N1313131 D1N4744A 
-V_V38         N132235 0 DC 15V  
+V_V38         N132235 0 DC 12V  
 R_R98         N131325 N131613  10 TC=0,0 
 R_R96         N131657 N131417  1k TC=0,0 
 R_R102         N131329 N131301  10k TC=0,0 
@@ -163,7 +163,7 @@ C_C84         N132283 N132147  22n  TC=0,0
 C_C80         N131657 N131417  22n  TC=0,0 
 R_R99         0 N131835  150 TC=0,0 
 V_V39         N132283 0  
-+PULSE 0V 15V 30usec 0 0 2usec 20usec
++PULSE 0V 12V 30usec 0 0 2usec 20usec
 D_D36         N131301 N1312891 D1N4740A 
 X_TX24    N131329 N131859 N131835 0 SCHEMATIC1_TX24 
 R_R104         N131301 N132503  10 TC=0,0 
@@ -226,9 +226,9 @@ L2_TX24         3 4 15000uH
 **** RESUMING Trans.cir ****
 .END
 
-**** 05/09/18 11:10:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
+ ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
 
  ****     Diode MODEL PARAMETERS
@@ -331,9 +331,9 @@ L2_TX24         3 4 15000uH
           RS    3.000000E-06                 
 
 
-**** 05/09/18 11:10:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
+ ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
 
  ****     BJT MODEL PARAMETERS
@@ -485,9 +485,9 @@ L2_TX24         3 4 15000uH
            D     .52             .87             .87             .52         
 
 
-**** 05/09/18 11:10:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
+ ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
 
  ****     MOSFET MODEL PARAMETERS
@@ -562,9 +562,9 @@ L2_TX24         3 4 15000uH
        XPART    0               0            
 
 
-**** 05/09/18 11:10:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
+ ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
 
  ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
@@ -615,19 +615,19 @@ L2_TX24         3 4 15000uH
 
 (N131325) 4.494E-09                   (N131329)  150.0000                       
 
-(N131417) 150.0E-09                   (N131471) 413.0E-12                       
+(N131417) 120.0E-09                   (N131471) 290.7E-12                       
 
-(N131485)    0.0000                   (N131517)   15.0000                       
+(N131485)    0.0000                   (N131517)   12.0000                       
 
 (N131613)-423.5E-24                   (N131657)    0.0000                       
 
 (N131835)    0.0000                   (N131859)  150.0000                       
 
-(N131907)  300.0000                   (N132147) 150.0E-09                       
+(N131907)  300.0000                   (N132147) 120.0E-09                       
 
-(N132197) 413.0E-12                   (N132203)    0.0000                       
+(N132197) 290.7E-12                   (N132203)    0.0000                       
 
-(N132235)   15.0000                   (N132283)    0.0000                       
+(N132235)   12.0000                   (N132283)    0.0000                       
 
 (N132503)  150.0000                   (N132701)  300.0000                       
 
@@ -681,11 +681,11 @@ L2_TX24         3 4 15000uH
 
 (X_C69.xinstcapacitor.4) 412.5E-12    (X_C78.xinstcapacitor.3) 412.5E-12        
 
-(X_C78.xinstcapacitor.4) 412.5E-12    (X_C79.xinstcapacitor.3) 412.5E-12        
+(X_C78.xinstcapacitor.4) 412.5E-12    (X_C79.xinstcapacitor.3) 290.4E-12        
 
-(X_C79.xinstcapacitor.4) 412.5E-12    (X_C88.xinstcapacitor.3) 412.5E-12        
+(X_C79.xinstcapacitor.4) 290.4E-12    (X_C88.xinstcapacitor.3) 290.4E-12        
 
-(X_C88.xinstcapacitor.4) 412.5E-12                                              
+(X_C88.xinstcapacitor.4) 290.4E-12                                              
 
 (X_C22.xinstcapacitor.AWBDISCAP_DUMMY1)    1.0000                               
 
@@ -752,10 +752,10 @@ L2_TX24         3 4 15000uH
     V_V32        1.500E-10
     V_V33       -1.875E-10
     V_V40       -1.008E-03
-    V_V36       -1.875E-10
-    V_V37        1.500E-10
-    V_V38       -1.875E-10
-    V_V39        1.500E-10
+    V_V36       -1.464E-10
+    V_V37        1.200E-10
+    V_V38       -1.464E-10
+    V_V39        1.200E-10
     X_M3.VFI2    1.500E-10
     X_M3.VFI1    0.000E+00
     X_M4.VFI2    1.500E-10
@@ -775,9 +775,9 @@ L2_TX24         3 4 15000uH
 
           JOB CONCLUDED
 
-**** 05/09/18 11:10:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
- ** Profile: "SCHEMATIC1-Trans"  [ D:\My_Work\20171211_Femto_LF Gen\0_GitHub_Data_LF\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicef
+ ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
 
  ****     JOB STATISTICS SUMMARY
@@ -787,5 +787,5 @@ L2_TX24         3 4 15000uH
 
 
 
-  Total job time (using Solver 1)   =        1.17
+  Total job time (using Solver 1)   =        1.00
 
