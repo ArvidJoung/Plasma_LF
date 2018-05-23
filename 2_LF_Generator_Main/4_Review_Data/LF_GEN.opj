@@ -33,17 +33,9 @@
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Path "Design Resources"
-         "C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn")
-      (Path "Design Resources"
-         "C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
-         "SCHEMATIC1")
       (Path "Outputs")
       (Path "PSpice Resources")
-      (Path "PSpice Resources" "Simulation Profiles")
-      (Select "Design Resources"
-         "C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen.dsn"
-         "SCHEMATIC1" "PAGE3"))
+      (Path "PSpice Resources" "Simulation Profiles"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -53,8 +45,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1689 52 521")
-        (Scroll "-98 0")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1689 52 521")
+        (Scroll "-223 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path
@@ -64,8 +56,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 104 1741 104 573")
-        (Scroll "-223 0")
+        (Placement "44 0 1 -1 -1 -8 -31 104 1741 104 573")
+        (Scroll "-98 0")
         (Zoom "100")
         (Occurrence "/"))
       (Path

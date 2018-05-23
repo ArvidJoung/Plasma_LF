@@ -1,5 +1,5 @@
 
-**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/23/18 12:07:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
@@ -226,7 +226,7 @@ L2_TX24         3 4 15000uH
 **** RESUMING Trans.cir ****
 .END
 
-**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/23/18 12:07:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
@@ -331,7 +331,7 @@ L2_TX24         3 4 15000uH
           RS    3.000000E-06                 
 
 
-**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/23/18 12:07:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
@@ -485,7 +485,7 @@ L2_TX24         3 4 15000uH
            D     .52             .87             .87             .52         
 
 
-**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/23/18 12:07:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
@@ -562,7 +562,7 @@ L2_TX24         3 4 15000uH
        XPART    0               0            
 
 
-**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/23/18 12:07:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
@@ -775,7 +775,7 @@ L2_TX24         3 4 15000uH
 
           JOB CONCLUDED
 
-**** 05/20/18 17:43:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+**** 05/23/18 12:07:03 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
 
  ** Profile: "SCHEMATIC1-Trans"  [ C:\WORK\Project\2_Plasma_LF_Generator\2_LF_Generator_Main\4_Review_Data\lf_gen-pspicefiles\schemat
 
@@ -787,5 +787,5 @@ L2_TX24         3 4 15000uH
 
 
 
-  Total job time (using Solver 1)   =        1.00
+  Total job time (using Solver 1)   =        1.05
 
